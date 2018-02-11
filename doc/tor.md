@@ -1,7 +1,7 @@
 TOR SUPPORT IN COLX
 =======================
 
-It is possible to run COLX as a Tor hidden service, and connect to such services.
+It is possible to run ZeroNodeas a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others
@@ -10,10 +10,10 @@ port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.htm
 for how to properly configure Tor.
 
 
-Run COLX behind a Tor proxy
+Run ZeroNodebehind a Tor proxy
 ----------------------------------
 
-The first step is running COLX behind a Tor proxy. This will already make all
+The first step is running ZeroNodebehind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 ```
 -proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -46,7 +46,7 @@ In a typical situation, this suffices to run behind a Tor proxy:
 ./colxd -proxy=127.0.0.1:9050
 ```
 
-Run a COLX hidden server
+Run a ZeroNodehidden server
 -------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
@@ -71,7 +71,7 @@ NumEntryGuards 8
 The directory can be different of course, but (both) port numbers should be equal to
 your colxd's P2P listen port (51472 by default).
 ```
--externalip=X   You can tell colx about its publicly reachable address using
+-externalip=X   You can tell zeronode about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
                 configuration, you can find your onion address in
                 /var/lib/tor/colx-service/hostname. Onion addresses are given
@@ -110,7 +110,7 @@ for normal IPv4/IPv6 communication, use:
 ./colxd -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
 ```
 
-List of known COLX Tor relays
+List of known ZeroNodeTor relays
 ------------------------------------
 ```
 y5kcscnhpygvvnjn.onion:989
