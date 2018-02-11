@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your COLX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun COLX osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your ZeroNode addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun ZeroNode osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your COLX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun COLX osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your ZeroNode addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun ZeroNode osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -164,16 +164,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>COLX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your COLXs from being stolen by malware infecting your computer.</source>
-        <translation>COLX sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella COLXien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>ZeroNode will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NODEs from being stolen by malware infecting your computer.</source>
+        <translation>ZeroNode sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella ZeroNodeien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COLX&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki COLXisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZeroNode&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki ZeroNodeisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,8 +227,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä Pivx osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a ZeroNode Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä ZeroNode osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -236,8 +236,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The PIVX address to sign the message with</source>
-        <translation>COLX osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The ZeroNode address to sign the message with</source>
+        <translation>ZeroNode osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -268,8 +268,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this COLX address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän COLX osoitteen</translation>
+        <source>Sign the message to prove you own this ZeroNode address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän ZeroNode osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -288,8 +288,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;BIP 38 salauksen avaus</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
-        <translation>COLX osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The ZeroNode address the message was signed with</source>
+        <translation>ZeroNode osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -575,16 +575,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>COLX Core</source>
-        <translation>COLX Ydin</translation>
+        <source>ZeroNode Core</source>
+        <translation>ZeroNode Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a COLX address</source>
-        <translation>Lähetä kolikkoja COLX osoitteeseen</translation>
+        <source>Send coins to a ZeroNode address</source>
+        <translation>Lähetä kolikkoja ZeroNode osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and colx: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja colx: URIja)</translation>
+        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja ZeroNode: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -595,24 +595,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About COLX Core</source>
-        <translation>COLX Core &amp;ytimestä</translation>
+        <source>&amp;About ZeroNode Core</source>
+        <translation>ZeroNode Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about COLX Core</source>
-        <translation>Näytä tietoja COLX Ytimestä</translation>
+        <source>Show information about ZeroNode Core</source>
+        <translation>Näytä tietoja ZeroNode Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for COLX</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja COLX:lle</translation>
+        <source>Modify configuration options for ZeroNode</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja ZeroNode:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your COLX addresses to prove you own them</source>
+        <source>Sign messages with your ZeroNode addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified COLX addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä COLX osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified ZeroNode addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä ZeroNode osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -643,8 +643,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a COLX: URI or payment request</source>
-        <translation>Avaa COLX: URI tai pyydä maksua</translation>
+        <source>Open a ZeroNode: URI or payment request</source>
+        <translation>Avaa ZeroNode: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -655,12 +655,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the COLX Core help message to get a list with possible COLX command-line options</source>
-        <translation>Näytä COLX Ydin apuviesti saadaksesi lista mahdollisista COLX komentolinja komennoista.</translation>
+        <source>Show the ZeroNode Core help message to get a list with possible ZeroNode command-line options</source>
+        <translation>Näytä ZeroNode Ydin apuviesti saadaksesi lista mahdollisista ZeroNode komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>COLX Core client</source>
-        <translation>COLX Ydin asiakasohjelma</translation>
+        <source>ZeroNode Core client</source>
+        <translation>ZeroNode Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -894,8 +894,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>COLX Core</source>
-        <translation>COLX Ydin</translation>
+        <source>ZeroNode Core</source>
+        <translation>ZeroNode Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -913,12 +913,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to COLX Core.</source>
-        <translation>Tervetuloa COLX Ytimeen.</translation>
+        <source>Welcome to ZeroNode Core.</source>
+        <translation>Tervetuloa ZeroNode Ytimeen.</translation>
     </message>
     <message>
-        <source>COLX Core</source>
-        <translation>COLX Ydin</translation>
+        <source>ZeroNode Core</source>
+        <translation>ZeroNode Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1091,32 +1091,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 COLX</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 COLX</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 NODE</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 NODE</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 COLX</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 COLX</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 NODE</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 NODE</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 COLX to anonymize 10000 COLX</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 COLX anonymoidaksesi 10000 COLX</translation>
+        <source>This option is the quickest and will cost about ~0.025 NODE to anonymize 10000 NODE</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 NODE anonymoidaksesi 10000 NODE</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 COLX to anonymize 10000 COLX</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 COLX anonymoidaksesi 10000 COLX</translation>
+        <source>This option is moderately fast and will cost about 0.05 ZeroNode to anonymize 10000 NODE</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 ZeroNode anonymoidaksesi 10000 NODE</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 COLX per 10000 COLX you anonymize.</source>
-        <translation>0.1 per 10000 COLX, jotka anonymisoit.</translation>
+        <source>0.1 ZeroNode per 10000 NODE you anonymize.</source>
+        <translation>0.1 per 10000 NODE, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1165,12 +1165,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start COLX after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä COLX kun kirjaudut sisään.</translation>
+        <source>Automatically start ZeroNode after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä ZeroNode kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start COLX on system login</source>
-        <translation>&amp;Aloita COLX järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start ZeroNode on system login</source>
+        <translation>&amp;Aloita ZeroNode järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1315,8 +1315,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the COLX RPC console.</source>
-        <translation>Tervetuloa COLX RPC konsoliin.</translation>
+        <source>Welcome to the ZeroNode RPC console.</source>
+        <translation>Tervetuloa ZeroNode RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1503,8 +1503,8 @@ Please check the address and try again.</source>
         <translation>ei</translation>
     </message>
     <message>
-        <source>0 COLX</source>
-        <translation>0 COLX</translation>
+        <source>0 NODE</source>
+        <translation>0 NODE</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1608,8 +1608,8 @@ Please check the address and try again.</source>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The PIVX address to sign the message with</source>
-        <translation>COLX osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The ZeroNode address to sign the message with</source>
+        <translation>ZeroNode osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1632,12 +1632,12 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this COLX address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän COLX osoitteen</translation>
+        <source>Sign the message to prove you own this ZeroNode address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän ZeroNode osoitteen</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
-        <translation>COLX osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The ZeroNode address the message was signed with</source>
+        <translation>ZeroNode osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1675,8 +1675,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>COLX Core</source>
-        <translation>COLX Ydin</translation>
+        <source>ZeroNode Core</source>
+        <translation>ZeroNode Ydin</translation>
     </message>
     </context>
 <context>
@@ -1887,7 +1887,7 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>colx-core</name>
+    <name>zeronode-core</name>
     <message>
         <source>Error</source>
         <translation>Virhe</translation>

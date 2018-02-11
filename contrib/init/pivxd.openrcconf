@@ -1,25 +1,25 @@
-# /etc/conf.d/colxd: config file for /etc/init.d/colxd
+# /etc/conf.d/zeronoded: config file for /etc/init.d/zeronoded
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/colx/colx.conf"
+#BITCOIND_CONFIGFILE="/etc/zeronode/zeronode.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/colxd"
+#BITCOIND_PIDDIR="/var/run/zeronoded"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/colxd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/zeronoded.pid"
 
-# Where to write colxd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/colxd"
+# Where to write zeronoded data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/zeronoded"
 
-# User and group to own colxd process
-#BITCOIND_USER="colx"
-#BITCOIND_GROUP="colx"
+# User and group to own zeronoded process
+#BITCOIND_USER="zeronode"
+#BITCOIND_GROUP="zeronode"
 
-# Path to colxd executable
-#BITCOIND_BIN="/usr/bin/colxd"
+# Path to zeronoded executable
+#BITCOIND_BIN="/usr/bin/zeronoded"
 
-# Nice value to run colxd under
+# Nice value to run zeronoded under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/colx-project/colx
+url=https://github.com/zeronode-project/zeronode
 proc=2
 mem=2000
 lxc=true
@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the colx, gitian-builder, gitian.sigs, and colx-detached-sigs.
+Run this script from the directory containing the zeronode, gitian-builder, gitian.sigs, and zeronode-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -39,7 +39,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/colx-project/colx
+-u|--url	Specify the URL of the repository. Default is https://github.com/zeronode-project/zeronode
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -232,8 +232,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/colx-project/gitian.sigs.git
-    git clone https://github.com/colx-project/colx-detached-sigs.git
+    git clone https://github.com/zeronode-project/zeronode/gitian.sigs.git
+    git clone https://github.com/zeronode-project/zeronode/zeronode-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]

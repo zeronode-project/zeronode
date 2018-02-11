@@ -45,7 +45,7 @@ void StopRPCThreads();
 /** Query whether RPC is running */
 bool IsRPCRunning();
 
-/** 
+/**
  * Set the RPC warmup status.  When this is done, all RPC calls will error out
  * immediately with RPC_IN_WARMUP.
  */
@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * COLX RPC command dispatcher.
+ * ZeroNode RPC command dispatcher.
  */
 class CRPCTable
 {

@@ -62,12 +62,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your COLX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw COLXadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
+        <source>These are your ZeroNode addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw ZeroNodeadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
     </message>
     <message>
-        <source>These are your COLX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw COLXadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your ZeroNode addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw ZeroNodeadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>COLX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your COLXs from being stolen by malware infecting your computer.</source>
-        <translation>COLX zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw COLXs stelen.</translation>
+        <source>ZeroNode will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NODEs from being stolen by malware infecting your computer.</source>
+        <translation>ZeroNode zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw NODEs stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COLX&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW COLX VERLIEZEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZeroNode&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW ZeroNode VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -231,16 +231,16 @@
         <translation>&amp;BIP 38 Versleuteling</translation>
     </message>
     <message>
-        <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een COLX adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
+        <source>Enter a ZeroNode Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Voer een ZeroNode adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adres:</translation>
     </message>
     <message>
-        <source>The PIVX address to sign the message with</source>
-        <translation>Het COLX adres om het bericht met te ondertekenen</translation>
+        <source>The ZeroNode address to sign the message with</source>
+        <translation>Het ZeroNode adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -271,8 +271,8 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this COLX address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het COLX adres bezit</translation>
+        <source>Sign the message to prove you own this ZeroNode address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het ZeroNode adres bezit</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -295,12 +295,12 @@
         <translation>Voer de BIP 38 versleutelde geheime sleutel in. Voer het wachtwoord in, in het middelste veld. Druk op Ontsleutelen Sleutel om de geheime sleutel te berekenen.  Nadat de geheime sleutel is ontsleuteld, zal het klikken op 'Adres Importeren' de geheime sleutel toevoegen aan de portemonnee.</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
-        <translation>Het COLX adres waarmee het bericht was ondertekend</translation>
+        <source>The ZeroNode address the message was signed with</source>
+        <translation>Het ZeroNode adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified COLX address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde COLX adres</translation>
+        <source>Verify the message to ensure it was signed with the specified ZeroNode address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde ZeroNode adres</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -590,16 +590,16 @@
         <translation>Tabblad werkbalk</translation>
     </message>
     <message>
-        <source>COLX Core</source>
-        <translation>COLX Kern</translation>
+        <source>ZeroNode Core</source>
+        <translation>ZeroNode Kern</translation>
     </message>
     <message>
-        <source>Send coins to a COLX address</source>
-        <translation>Verstuur munten naar een COLX adres</translation>
+        <source>Send coins to a ZeroNode address</source>
+        <translation>Verstuur munten naar een ZeroNode adres</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and colx: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en COLX: URI's)</translation>
+        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
+        <translation>Vraag betaling aan (genereert QR-codes en ZeroNode: URI's)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -610,24 +610,24 @@
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>&amp;About COLX Core</source>
-        <translation>&amp;Over COLX Kern</translation>
+        <source>&amp;About ZeroNode Core</source>
+        <translation>&amp;Over ZeroNode Kern</translation>
     </message>
     <message>
-        <source>Show information about COLX Core</source>
-        <translation>Toon informatie over COLX Kern</translation>
+        <source>Show information about ZeroNode Core</source>
+        <translation>Toon informatie over ZeroNode Kern</translation>
     </message>
     <message>
-        <source>Modify configuration options for COLX</source>
-        <translation>Wijzig COLX configuratie opties</translation>
+        <source>Modify configuration options for ZeroNode</source>
+        <translation>Wijzig ZeroNode configuratie opties</translation>
     </message>
     <message>
-        <source>Sign messages with your COLX addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw COLX adressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your ZeroNode addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw ZeroNode adressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified COLX addresses</source>
-        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde COLX adressen</translation>
+        <source>Verify messages to ensure they were signed with specified ZeroNode addresses</source>
+        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde ZeroNode adressen</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -757,8 +757,8 @@
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (colx.conf).</source>
-        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (colx.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (zeronode.conf).</source>
+        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (zeronode.conf).</translation>
     </message>
 </context>
 <context>
@@ -942,8 +942,8 @@
         <translation>Wijzig verzendadres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid COLX address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig COLX adres.</translation>
+        <source>The entered address "%1" is not a valid ZeroNode address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig ZeroNode adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -964,8 +964,8 @@
         <translation>versie</translation>
     </message>
     <message>
-        <source>COLX Core</source>
-        <translation>COLX Kern</translation>
+        <source>ZeroNode Core</source>
+        <translation>ZeroNode Kern</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -979,8 +979,8 @@
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>COLX Core</source>
-        <translation>COLX Kern</translation>
+        <source>ZeroNode Core</source>
+        <translation>ZeroNode Kern</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1426,15 +1426,15 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>COLX Core is shutting down...</source>
-        <translation>COLX Core is aan het afsluiten...</translation>
+        <source>ZeroNode Core is shutting down...</source>
+        <translation>ZeroNode Core is aan het afsluiten...</translation>
     </message>
     </context>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The PIVX address to sign the message with</source>
-        <translation>Het COLX adres om het bericht met te ondertekenen</translation>
+        <source>The ZeroNode address to sign the message with</source>
+        <translation>Het ZeroNode adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1465,16 +1465,16 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this COLX address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het COLX adres bezit</translation>
+        <source>Sign the message to prove you own this ZeroNode address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het ZeroNode adres bezit</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
-        <translation>Het COLX adres waarmee het bericht was ondertekend</translation>
+        <source>The ZeroNode address the message was signed with</source>
+        <translation>Het ZeroNode adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified COLX address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde COLX adres</translation>
+        <source>Verify the message to ensure it was signed with the specified ZeroNode address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde ZeroNode adres</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1512,8 +1512,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>COLX Core</source>
-        <translation>COLX Kern</translation>
+        <source>ZeroNode Core</source>
+        <translation>ZeroNode Kern</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1660,7 +1660,7 @@
     </message>
     </context>
 <context>
-    <name>colx-core</name>
+    <name>zeronode-core</name>
     <message>
         <source>Error</source>
         <translation>Error</translation>

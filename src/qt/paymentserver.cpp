@@ -1,6 +1,8 @@
-// Copyright (c) 2011-2014 The Bitcoin developers
+// Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2017-2018 The ColossusCoinXT developers
+// Copyright (c) 2018 The ZeroNode developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -52,7 +54,7 @@ using namespace boost;
 using namespace std;
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString BITCOIN_IPC_PREFIX("colx:");
+const QString BITCOIN_IPC_PREFIX("node:");
 // BIP70 payment protocol messages
 const char* BIP70_MESSAGE_PAYMENTACK = "PaymentACK";
 const char* BIP70_MESSAGE_PAYMENTREQUEST = "PaymentRequest";
@@ -86,7 +88,7 @@ namespace // Anon namespace
 //
 static QString ipcServerName()
 {
-    QString name("ColossusCoinXTQt");
+    QString name("zeronodeQt");
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path
@@ -193,7 +195,7 @@ void PaymentServer::ipcParseCommandLine(int argc, char* argv[])
         if (arg.startsWith("-"))
             continue;
 
-        // If the colx: URI contains a payment request, we are not able to detect the
+        // If the NODE: URI contains a payment request, we are not able to detect the
         // network as that would require fetching and parsing the payment request.
         // That means clicking such an URI which contains a testnet payment request
         // will start a mainnet instance and throw a "wrong network" error.
@@ -309,12 +311,12 @@ PaymentServer::~PaymentServer()
 }
 
 //
-// OSX-specific way of handling colx: URIs and
+// OSX-specific way of handling zeronode: URIs and
 // PaymentRequest mime types
 //
 bool PaymentServer::eventFilter(QObject* object, QEvent* event)
 {
-    // clicking on colx: URIs creates FileOpen events on the Mac
+    // clicking on zeronode: URIs creates FileOpen events on the Mac
     if (event->type() == QEvent::FileOpen) {
         QFileOpenEvent* fileEvent = static_cast<QFileOpenEvent*>(event);
         if (!fileEvent->file().isEmpty())
@@ -335,7 +337,7 @@ void PaymentServer::initNetManager()
     if (netManager != NULL)
         delete netManager;
 
-    // netManager is used to fetch paymentrequests given in colx: URIs
+    // netManager is used to fetch paymentrequests given in node: URIs
     netManager = new QNetworkAccessManager(this);
 
     QNetworkProxy proxy;
@@ -372,7 +374,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
         return;
     }
 
-    if (s.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // colx: URI
+    if (s.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // node: URI
     {
 #if QT_VERSION < 0x050000
         QUrl uri(s);
@@ -409,7 +411,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
                     emit receivedPaymentRequest(recipient);
             } else
                 emit message(tr("URI handling"),
-                    tr("URI cannot be parsed! This can be caused by an invalid ColossusCoinXT address or malformed URI parameters."),
+                    tr("URI cannot be parsed! This can be caused by an invalid zeronode address or malformed URI parameters."),
                     CClientUIInterface::ICON_WARNING);
 
             return;
@@ -524,7 +526,7 @@ bool PaymentServer::processPaymentRequest(PaymentRequestPlus& request, SendCoins
             // Append destination address
             addresses.append(QString::fromStdString(CBitcoinAddress(dest).ToString()));
         } else if (!recipient.authenticatedMerchant.isEmpty()) {
-            // Insecure payments to custom colx addresses are not supported
+            // Insecure payments to custom zeronode addresses are not supported
             // (there is no good way to tell the user where they are paying in a way
             // they'd have a chance of understanding).
             emit message(tr("Payment request rejected"),

@@ -1,4 +1,4 @@
-bin_PROGRAMS += qt/colx-qt
+bin_PROGRAMS += qt/zeronode-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
 # colx qt core #
@@ -317,7 +317,7 @@ RES_CSS = \
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/ColossusCoinXT-qt-res.rc
+BITCOIN_RC = qt/res/zeronode-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -344,7 +344,7 @@ $(qt_libbitcoinqt_a_OBJECTS) $(qt_colx_qt_OBJECTS) : | $(QT_MOC)
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# colx-qt binary #
+# zeronode-qt binary #
 qt_colx_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
@@ -396,9 +396,9 @@ CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda 
 CLEANFILES += $(CLEAN_QT)
 
 colx_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_colx_qt_OBJECTS) qt/colx-qt$(EXEEXT) $(LIBBITCOINQT)
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_colx_qt_OBJECTS) qt/zeronode-qt$(EXEEXT) $(LIBBITCOINQT)
 
-colx_qt : qt/colx-qt$(EXEEXT)
+colx_qt : qt/zeronode-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

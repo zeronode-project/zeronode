@@ -45,7 +45,7 @@ Instructions: Homebrew
 1. Clone the github tree to get the source code and go into the directory.
 
         git clone https://github.com/COLX-Project/COLX.git
-        cd COLX
+        cd zeronode
 
 2.  Build zernoded:
 
@@ -81,7 +81,7 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `zernoded` for your own use.
 
-zernoded/colx-cli binaries are not included in the zeronode-qt.app bundle.
+zernoded/zeronode-cli binaries are not included in the zeronode-qt.app bundle.
 
 If you are building `zernoded` or `zeronode-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
@@ -104,18 +104,18 @@ directory. We have to first create the RPC configuration file, though.
 Run `./zernoded` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=colxrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/COLX/colx.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/COLX/colx.conf"
+    echo -e "rpcuser=zeronoderpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/zeronode/zeronode.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/zeronode/zeronode.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/COLX/debug.log
+    tail -f $HOME/Library/Application\ Support/zeronode/debug.log
 
 Other commands:
 -------
 
-    ./zernoded -daemon # to start the colx daemon.
-    ./colx-cli --help  # for a list of command-line options.
-    ./colx-cli help    # When the daemon is running, to get a list of RPC commands
+    ./zernoded -daemon # to start the zeronode daemon.
+    ./zeronode-cli --help  # for a list of command-line options.
+    ./zeronode-cli help    # When the daemon is running, to get a list of RPC commands

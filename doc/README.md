@@ -40,7 +40,7 @@ The following are developer notes on how to build ZeroNode on your native platfo
 
 Development
 ---------------------
-The Pivx repo's [root README](https://github.com/zeronode-project/zeronode/blob/master/README.md) contains relevant information on the development process and automated testing.
+The ZeroNode repo's [root README](https://github.com/zeronode-project/zeronode/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

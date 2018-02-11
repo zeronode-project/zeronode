@@ -5,21 +5,21 @@
 if [ -d "/var/lib/colx/.colx" ]; then
 	BITCOIND_DEFAULT_DATADIR="/var/lib/colx/.colx"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/colxd"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/zeronoded"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/colx/colx.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/colxd}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/colxd.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/zeronode/zeronode.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/zeronoded}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/zeronoded.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-colx}
-BITCOIND_GROUP=${BITCOIND_GROUP:-colx}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/colxd}
+BITCOIND_USER=${BITCOIND_USER:-zeronode}
+BITCOIND_GROUP=${BITCOIND_GROUP:-zeronode}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/zeronoded}
 
-name="COLX Core Daemon"
-description="COLX crypto-currency p2p network daemon"
+name="ZeroNode Core Daemon"
+description="ZeroNode crypto-currency p2p network daemon"
 
-command="/usr/bin/colxd"
+command="/usr/bin/zeronoded"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run colxd."
+		eerror "ERROR: You must set a secure rpcpassword to run zeronoded."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Pivx Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"ZeroNode Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

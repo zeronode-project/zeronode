@@ -18,7 +18,7 @@ For example:
   ./github-merge.py 3077
 
 (in any git repository) will help you merge pull request #3077 for the
-COLX-Project/COLX repository.
+zeronode-project/zeronode repository.
 
 What it does:
 * Fetch master and the pull request.
@@ -36,16 +36,16 @@ couldn't mess with the sources.
 
 Setup
 ---------
-Configuring the github-merge tool for the COLX repository is done in the following way:
+Configuring the github-merge tool for the ZeroNode repository is done in the following way:
 
-    git config githubmerge.repository COLX-Project/COLX
+    git config githubmerge.repository zeronode-project/zeronode
     git config githubmerge.testcmd "make -j4 check" (adapt to whatever you want to use for testing)
     git config --global user.signingkey mykeyid (if you want to GPG sign)
 
 optimize-pngs.py
 ================
 
-A script to optimize png files in the COLX
+A script to optimize png files in the ZeroNode
 repository (requires pngcrush).
 
 fix-copyright-headers.py

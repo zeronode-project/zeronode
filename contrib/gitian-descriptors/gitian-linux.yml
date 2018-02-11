@@ -1,11 +1,11 @@
 ---
-name: "ColossusCoinXT-linux-1.0.0"
+name: "zeronode-linux-1.0.0"
 enable_cache: true
 suites:
 - "trusty"
 architectures:
 - "amd64"
-packages: 
+packages:
 - "curl"
 - "g++-aarch64-linux-gnu"
 - "g++-4.8-aarch64-linux-gnu"
@@ -29,8 +29,8 @@ packages:
 - "python"
 reference_datetime: "2015-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/ColossusCoinXT/ColossusCoinXT.git"
-  "dir": "ColossusCoinXT"
+- "url": "https://github.com/zeronode-project/zeronode.git"
+  "dir": "zeronode"
 files: []
 script: |
 
@@ -114,7 +114,7 @@ script: |
   chmod +x ${WRAP_DIR}/${prog}
   done
 
-  cd ColossusCoinXT
+  cd zeronode
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do

@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Pivx"
-            VALUE "FileDescription",    "Pivx-cli (OSS RPC client for Pivx)"
+            VALUE "CompanyName",        "ZeroNode"
+            VALUE "FileDescription",    "zeronode-cli (OSS RPC client for ZeroNode)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "colx-cli"
+            VALUE "InternalName",       "zeronode-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "colx-cli.exe"
-            VALUE "ProductName",        "Pivx-cli"
+            VALUE "OriginalFilename",   "zeronode-cli.exe"
+            VALUE "ProductName",        "zeronode-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

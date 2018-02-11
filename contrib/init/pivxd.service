@@ -1,19 +1,19 @@
 [Unit]
-Description=COLX's distributed currency daemon
+Description=ZeroNode's distributed currency daemon
 After=network.target
 
 [Service]
-User=colx
-Group=colx
+User=zeronode
+Group=zeronode
 
 Type=forking
-PIDFile=/var/lib/colxd/colxd.pid
+PIDFile=/var/lib/zeronoded/zeronoded.pid
 
-ExecStart=/usr/bin/colxd -daemon -pid=/var/lib/colxd/colxd.pid \
-          -conf=/etc/colx/colx.conf -datadir=/var/lib/colxd
+ExecStart=/usr/bin/zeronoded -daemon -pid=/var/lib/zeronoded/zeronoded.pid \
+          -conf=/etc/zeronode/zeronode.conf -datadir=/var/lib/zeronoded
 
-ExecStop=-/usr/bin/colx-cli -conf=/etc/colx/colx.conf \
-         -datadir=/var/lib/colxd stop
+ExecStop=-/usr/bin/zeronode-cli -conf=/etc/zeronode/zeronode.conf \
+         -datadir=/var/lib/zeronoded stop
 
 Restart=always
 PrivateTmp=true

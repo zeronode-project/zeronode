@@ -1,5 +1,5 @@
 [Protocol]
-exec=colx-qt '%u'
+exec=zeronode-qt '%u'
 protocol=colx
 input=none
 output=none

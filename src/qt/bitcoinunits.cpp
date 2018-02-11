@@ -1,6 +1,8 @@
-// Copyright (c) 2011-2014 The Bitcoin developers
+// Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2017-2018 The ColossusCoinXT developers
+// Copyright (c) 2018 The ZeroNode developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -19,18 +21,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(COLX);
-    unitlist.append(mCOLX);
-    unitlist.append(uCOLX);
+    unitlist.append(NODE);
+    unitlist.append(mNODE);
+    unitlist.append(uNODE);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case COLX:
-    case mCOLX:
-    case uCOLX:
+    case NODE:
+    case mNODE:
+    case uNODE:
         return true;
     default:
         return false;
@@ -40,12 +42,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case COLX:
-        return QString("colx");
-    case mCOLX:
-        return QString("mcolx");
-    case uCOLX:
-        return QString::fromUtf8("ucolx");
+    case NODE:
+        return QString("node");
+    case mNODE:
+        return QString("mnode");
+    case uNODE:
+        return QString::fromUtf8("unode");
     default:
         return QString("???");
     }
@@ -55,23 +57,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case COLX:
-            return QString("COLX");
-        case mCOLX:
-            return QString("mCOLX");
-        case uCOLX:
-            return QString::fromUtf8("μCOLX");
+        case NODE:
+            return QString("NODE");
+        case mNODE:
+            return QString("mNODE");
+        case uNODE:
+            return QString::fromUtf8("μNODE");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case COLX:
-            return QString("tCOLX");
-        case mCOLX:
-            return QString("mtCOLX");
-        case uCOLX:
-            return QString::fromUtf8("μtCOLX");
+        case NODE:
+            return QString("tNODE");
+        case mNODE:
+            return QString("mtNODE");
+        case uNODE:
+            return QString::fromUtf8("μtNODE");
         default:
             return QString("???");
         }
@@ -82,23 +84,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case COLX:
-            return QString("COLX");
-        case mCOLX:
-            return QString("Milli-COLX (1 / 1" THIN_SP_UTF8 "000)");
-        case uCOLX:
-            return QString("Micro-COLX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case NODE:
+            return QString("NODE");
+        case mNODE:
+            return QString("Milli-NODE (1 / 1" THIN_SP_UTF8 "000)");
+        case uNODE:
+            return QString("Micro-NODE (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case COLX:
-            return QString("TestCOLXs");
-        case mCOLX:
-            return QString("Milli-TestCOLX (1 / 1" THIN_SP_UTF8 "000)");
-        case uCOLX:
-            return QString("Micro-TestCOLX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case NODE:
+            return QString("TestNODEs");
+        case mNODE:
+            return QString("Milli-TestNODE (1 / 1" THIN_SP_UTF8 "000)");
+        case uNODE:
+            return QString("Micro-TestNODE (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -108,11 +110,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case COLX:
+    case NODE:
         return 100000000;
-    case mCOLX:
+    case mNODE:
         return 100000;
-    case uCOLX:
+    case uNODE:
         return 100;
     default:
         return 100000000;
@@ -122,11 +124,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case COLX:
+    case NODE:
         return 8;
-    case mCOLX:
+    case mNODE:
         return 5;
-    case uCOLX:
+    case uNODE:
         return 2;
     default:
         return 0;

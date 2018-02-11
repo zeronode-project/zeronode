@@ -374,8 +374,8 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/colx-cli.cpp \
-           src/colx-tx.cpp \
+           src/zeronode-cli.cpp \
+           src/zeronode-tx.cpp \
            src/colx.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \

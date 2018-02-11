@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="COLXDemand">
+    <widget class="QLabel" name="zeronodedemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -2941,7 +2941,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate Pivx Deposit Address</string>
+      <string>Generate ZeroNode Deposit Address</string>
      </property>
      <property name="icon">
       <iconset resource="../colx.qrc">

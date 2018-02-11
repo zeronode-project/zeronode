@@ -46,10 +46,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Pivx Core colx-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("ZeroNode Core zeronode-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  colx-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded colx transaction") + "\n" +
-                               "  colx-tx [options] -create [commands]   " + _("Create hex-encoded colx transaction") + "\n" +
+                               "  zeronode-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded ZeroNode transaction") + "\n" +
+                               "  zeronode-tx [options] -create [commands]   " + _("Create hex-encoded ZeroNode transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -550,7 +550,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw runtime_error("too few parameters");
 
-            // param: hex-encoded colx transaction
+            // param: hex-encoded ZeroNode transaction
             string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

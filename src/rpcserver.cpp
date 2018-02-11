@@ -2,6 +2,8 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2017-2018 The ColossusCoinXT developers
+// Copyright (c) 2018 The ZeroNode developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -219,10 +221,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop COLX server.");
+            "\nStop ZeroNode server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "COLX server stopping";
+    return "ZeroNode server stopping";
 }
 
 
@@ -299,16 +301,16 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Pivx features */
-        {"colx", "masternode", &masternode, true, true, false},
-        {"colx", "masternodelist", &masternodelist, true, true, false},
-        {"colx", "mnbudget", &mnbudget, true, true, false},
-        {"colx", "mnbudgetvoteraw", &mnbudgetvoteraw, true, true, false},
-        {"colx", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"colx", "mnsync", &mnsync, true, true, false},
-        {"colx", "spork", &spork, true, true, false},
+        /* NODE features */
+        {"zeronode", "masternode", &masternode, true, true, false},
+        {"zeronode", "masternodelist", &masternodelist, true, true, false},
+        {"zeronode", "mnbudget", &mnbudget, true, true, false},
+        {"zeronode", "mnbudgetvoteraw", &mnbudgetvoteraw, true, true, false},
+        {"zeronode", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"zeronode", "mnsync", &mnsync, true, true, false},
+        {"zeronode", "spork", &spork, true, true, false},
 #ifdef ENABLE_WALLET
-        {"colx", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"zeronode", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -573,16 +575,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use colxd, or the -server option to colx-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use zeronoded, or the -server option to zeronode-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=colxrpc\n"
+                                               "rpcuser=zeronoderpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"COLX Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"ZeroNode Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1033,7 +1035,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> colx-cli " + methodname + " " + args + "\n";
+    return "> zeronode-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

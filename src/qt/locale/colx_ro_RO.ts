@@ -180,6 +180,6 @@
     </message>
     </context>
 <context>
-    <name>colx-core</name>
+    <name>zeronode-core</name>
     </context>
 </TS>

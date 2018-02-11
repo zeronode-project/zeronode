@@ -1,11 +1,11 @@
 ---
-name: "ColossusCoinXT-win-1.0.0"
+name: "zeronode-win-1.0.0"
 enable_cache: true
 suites:
 - "trusty"
 architectures:
 - "amd64"
-packages: 
+packages:
 - "curl"
 - "g++"
 - "git-core"
@@ -22,8 +22,8 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/ColossusCoinXT/ColossusCoinXT.git"
-  "dir": "ColossusCoinXT"
+- "url": "https://github.com/zeronode-project/zeronode.git"
+  "dir": "zeronode"
 files: []
 script: |
   WRAP_DIR=$HOME/wrapped
@@ -101,7 +101,7 @@ script: |
   create_per-host_linker_wrapper "2000-01-01 12:00:00"
   export PATH=${WRAP_DIR}:${PATH}
 
-  cd ColossusCoinXT
+  cd zeronode
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do

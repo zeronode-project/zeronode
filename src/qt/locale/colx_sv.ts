@@ -58,12 +58,12 @@
         <translation>Mottagar adresser</translation>
     </message>
     <message>
-        <source>These are your COLX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Det här är dina COLX adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
+        <source>These are your ZeroNode addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Det här är dina ZeroNode adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
     </message>
     <message>
-        <source>These are your COLX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Det här är dina COLX adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
+        <source>These are your ZeroNode addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Det här är dina ZeroNode adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -160,16 +160,16 @@
         <translation>Bekräfta plånboks krypering</translation>
     </message>
     <message>
-        <source>COLX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your COLXs from being stolen by malware infecting your computer.</source>
-        <translation>COLX kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina COLXs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>ZeroNode will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NODEs from being stolen by malware infecting your computer.</source>
+        <translation>ZeroNode kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina NODEs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COLX&lt;/b&gt;!</source>
-        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA COLX&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NODE&lt;/b&gt;!</source>
+        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA NODE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -223,8 +223,8 @@
         <translation>BIP 38 Kryptering</translation>
     </message>
     <message>
-        <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Skriv in en Pivx adress som du vill kryptera med BIP 38.
+        <source>Enter a ZeroNode Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Skriv in en ZeroNode adress som du vill kryptera med BIP 38.
 Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den krypterade privata nyckeln.</translation>
     </message>
     <message>
@@ -232,8 +232,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Adress:</translation>
     </message>
     <message>
-        <source>The PIVX address to sign the message with</source>
-        <translation>COLX adressen för signera meddelandet med</translation>
+        <source>The ZeroNode address to sign the message with</source>
+        <translation>ZeroNode adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -264,8 +264,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this COLX address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna COLX adress</translation>
+        <source>Sign the message to prove you own this ZeroNode address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna ZeroNode adress</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -288,12 +288,12 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Ange</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
-        <translation>COLX adressen meddelandet blev signerat med</translation>
+        <source>The ZeroNode address the message was signed with</source>
+        <translation>ZeroNode adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified COLX address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika COLX adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified ZeroNode address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika ZeroNode adressen.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -583,16 +583,16 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>flik vertygsrad</translation>
     </message>
     <message>
-        <source>COLX Core</source>
-        <translation>COLX Kärna</translation>
+        <source>ZeroNode Core</source>
+        <translation>ZeroNode Kärna</translation>
     </message>
     <message>
-        <source>Send coins to a COLX address</source>
-        <translation>Skicka mynt till en COLX adress</translation>
+        <source>Send coins to a ZeroNode address</source>
+        <translation>Skicka mynt till en ZeroNode adress</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and colx: URIs)</source>
-        <translation>Begär betalning (genererar QR kod och colx: URls)</translation>
+        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
+        <translation>Begär betalning (genererar QR kod och ZeroNode: URls)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -603,24 +603,24 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Utforska masternoder</translation>
     </message>
     <message>
-        <source>&amp;About COLX Core</source>
-        <translation>Om COLX Kärnan</translation>
+        <source>&amp;About ZeroNode Core</source>
+        <translation>Om ZeroNode Kärnan</translation>
     </message>
     <message>
-        <source>Show information about COLX Core</source>
-        <translation>Visa information om COLX Kärnan</translation>
+        <source>Show information about ZeroNode Core</source>
+        <translation>Visa information om ZeroNode Kärnan</translation>
     </message>
     <message>
-        <source>Modify configuration options for COLX</source>
-        <translation>Ändra konfigurationsval för COLX</translation>
+        <source>Modify configuration options for ZeroNode</source>
+        <translation>Ändra konfigurationsval för ZeroNode</translation>
     </message>
     <message>
-        <source>Sign messages with your COLX addresses to prove you own them</source>
-        <translation>Signera meddelanden med din COLX adress för att visa att du äger dem</translation>
+        <source>Sign messages with your ZeroNode addresses to prove you own them</source>
+        <translation>Signera meddelanden med din ZeroNode adress för att visa att du äger dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified COLX addresses</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika COLX adressen.</translation>
+        <source>Verify messages to ensure they were signed with specified ZeroNode addresses</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika ZeroNode adressen.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -631,8 +631,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Kryptera och avkryptera privata nycklar genom användning av lösenfras</translation>
     </message>
     <message>
-        <source>COLX Core client</source>
-        <translation>COLX kärn klient</translation>
+        <source>ZeroNode Core client</source>
+        <translation>ZeroNode kärn klient</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -841,15 +841,15 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>COLX Core</source>
-        <translation>COLX Kärna</translation>
+        <source>ZeroNode Core</source>
+        <translation>ZeroNode Kärna</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>COLX Core</source>
-        <translation>COLX Kärna</translation>
+        <source>ZeroNode Core</source>
+        <translation>ZeroNode Kärna</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1106,8 +1106,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The PIVX address to sign the message with</source>
-        <translation>COLX adressen för signera meddelandet med</translation>
+        <source>The ZeroNode address to sign the message with</source>
+        <translation>ZeroNode adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1130,16 +1130,16 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this COLX address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna COLX adress</translation>
+        <source>Sign the message to prove you own this ZeroNode address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna ZeroNode adress</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
-        <translation>COLX adressen meddelandet blev signerat med</translation>
+        <source>The ZeroNode address the message was signed with</source>
+        <translation>ZeroNode adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified COLX address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika COLX adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified ZeroNode address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika ZeroNode adressen.</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1181,8 +1181,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>COLX Core</source>
-        <translation>COLX Kärna</translation>
+        <source>ZeroNode Core</source>
+        <translation>ZeroNode Kärna</translation>
     </message>
     </context>
 <context>
@@ -1365,7 +1365,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
     </message>
     </context>
 <context>
-    <name>colx-core</name>
+    <name>zeronode-core</name>
     <message>
         <source>Error</source>
         <translation>Fel</translation>
