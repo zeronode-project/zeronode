@@ -57,7 +57,7 @@ Value mnbudget(const Array& params, bool fHelp)
         CBlockIndex* pindexPrev = chainActive.Tip();
 
         if (params.size() != 7)
-            throw runtime_error("Correct usage is 'mnbudget prepare proposal-name url payment_count block_start colx_address monthly_payment_colx'");
+            throw runtime_error("Correct usage is 'mnbudget prepare proposal-name url payment_count block_start node_address monthly_payment_node'");
 
         std::string strProposalName = params[1].get_str();
         if (strProposalName.size() > 20)
@@ -130,7 +130,7 @@ Value mnbudget(const Array& params, bool fHelp)
         CBlockIndex* pindexPrev = chainActive.Tip();
 
         if (params.size() != 8)
-            throw runtime_error("Correct usage is 'mnbudget submit proposal-name url payment_count block_start colx_address monthly_payment_colx fee_tx'");
+            throw runtime_error("Correct usage is 'mnbudget submit proposal-name url payment_count block_start node_address monthly_payment_node fee_tx'");
 
         // Check these inputs the same way we check the vote commands:
         // **********************************************************

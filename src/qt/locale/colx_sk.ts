@@ -606,8 +606,8 @@
         <translation>Odoslať mince na adresu ZeroNode</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a ZeroNode: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and node: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a node: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a ZeroNode: URI or payment request</source>
-        <translation>Otvorte ZeroNode: URI alebo žiadosť o platbu</translation>
+        <source>Open a node: URI or payment request</source>
+        <translation>Otvorte node: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>

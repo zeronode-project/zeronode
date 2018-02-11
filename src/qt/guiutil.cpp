@@ -79,7 +79,7 @@ extern double NSAppKitVersionNumber;
 #endif
 #endif
 
-#define URI_SCHEME "colx"
+#define URI_SCHEME "zeronode"
 
 namespace GUIUtil
 {
@@ -129,7 +129,7 @@ void setupAmountWidget(QLineEdit* widget, QWidget* parent)
 
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 {
-    // return if URI is not valid or is no ZeroNode: URI
+    // return if URI is not valid or is no node: URI
     if (!uri.isValid() || uri.scheme() != QString(URI_SCHEME))
         return false;
 
@@ -181,7 +181,7 @@ bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out)
 {
-    // Convert colx:// to colx:
+    // Convert NODE:// to node:
     //
     //    Cannot handle this later, because NODE:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
@@ -662,7 +662,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "colx.desktop";
+    return GetAutostartDir() / "zeronode.desktop";
 }
 
 bool GetStartOnSystemStartup()

@@ -391,21 +391,21 @@ zeronoded_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
 # zeronode-cli binary #
-colx_cli_LDADD = \
+zeronode_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
   $(SSL_LIBS) \
   $(CRYPTO_LIBS)
 
-colx_cli_SOURCES = \
+zeronode_cli_SOURCES = \
   zeronode-cli.cpp
 
-colx_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+zeronode_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
 # zeronode-tx binary #
-colx_tx_LDADD = \
+zeronode_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -414,15 +414,15 @@ colx_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-colx_tx_SOURCES = zeronode-tx.cpp
-colx_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+zeronode_tx_SOURCES = zeronode-tx.cpp
+zeronode_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-colx_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+zeronode_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-colx_cli_SOURCES += zeronode-cli-res.rc
+zeronode_cli_SOURCES += zeronode-cli-res.rc
 endif
-colx_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+zeronode_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

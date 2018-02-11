@@ -602,8 +602,8 @@
         <translation>Отправить монеты на ZeroNode адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
-        <translation>Запросить платежи (генерирует QR-код и ZeroNode: URI)</translation>
+        <source>Request payments (generates QR codes and node: URIs)</source>
+        <translation>Запросить платежи (генерирует QR-код и node: URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -662,8 +662,8 @@
         <translation>Открыть файл настроек мастернод</translation>
     </message>
     <message>
-        <source>Open a ZeroNode: URI or payment request</source>
-        <translation>Открыть ZeroNode: URI или запрос платежа</translation>
+        <source>Open a node: URI or payment request</source>
+        <translation>Открыть node: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -2072,8 +2072,8 @@ https://www.transifex.com/ZeroNode-project/ZeroNode-project-translations</transl
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start ZeroNode: click-to-pay handler</source>
-        <translation>Не удалось запустить ZeroNode: обработчик click-to-pay </translation>
+        <source>Cannot start node: click-to-pay handler</source>
+        <translation>Не удалось запустить node: обработчик click-to-pay </translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid ZeroNode address or malformed URI parameters.</source>

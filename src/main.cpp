@@ -2027,7 +2027,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("colx-scriptch");
+    RenameThread("zeronode-scriptch");
     scriptcheckqueue.Thread();
 }
 

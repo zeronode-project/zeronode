@@ -606,8 +606,8 @@
         <translation>Odeslat platbuna ZeroNode adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a ZeroNode: URIs)</translation>
+        <source>Request payments (generates QR codes and node: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a node: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -666,8 +666,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a ZeroNode: URI or payment request</source>
-        <translation>Otevřít ZeroNode: URI nebo platební žádost</translation>
+        <source>Open a node: URI or payment request</source>
+        <translation>Otevřít node: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>

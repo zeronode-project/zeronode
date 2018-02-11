@@ -583,8 +583,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lähetä kolikkoja ZeroNode osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja ZeroNode: URIja)</translation>
+        <source>Request payments (generates QR codes and node: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja node: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -604,7 +604,7 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
     </message>
     <message>
         <source>Modify configuration options for ZeroNode</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja ZeroNode:lle</translation>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja node:lle</translation>
     </message>
     <message>
         <source>Sign messages with your ZeroNode addresses to prove you own them</source>
@@ -643,8 +643,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a ZeroNode: URI or payment request</source>
-        <translation>Avaa ZeroNode: URI tai pyydä maksua</translation>
+        <source>Open a node: URI or payment request</source>
+        <translation>Avaa node: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>

@@ -7,7 +7,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/colx-config.h"
+#include "config/zeronode-config.h"
 #endif
 
 #include "bitcoingui.h"
@@ -95,7 +95,7 @@ static void InitMessage(const std::string& message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("colx-core", psz).toStdString();
+    return QCoreApplication::translate("zeronode-core", psz).toStdString();
 }
 
 static QString GetLangTerritory()
@@ -142,11 +142,11 @@ static void initTranslations(QTranslator& qtTranslatorBase, QTranslator& qtTrans
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         QApplication::installTranslator(&qtTranslator);
 
-    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in colx.qrc)
+    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in zeronode.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         QApplication::installTranslator(&translatorBase);
 
-    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in colx.qrc)
+    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in zeronode.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         QApplication::installTranslator(&translator);
 }
@@ -254,7 +254,7 @@ private:
     void startThread();
 };
 
-#include "colx.moc"
+#include "zeronode.moc"
 
 BitcoinCore::BitcoinCore() : QObject()
 {
@@ -485,7 +485,7 @@ void BitcoinApplication::initializeResult(int retval)
 
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
-        // ZeroNode: URIs or payment requests:
+        // node: URIs or payment requests:
         connect(paymentServer, SIGNAL(receivedPaymentRequest(SendCoinsRecipient)),
             window, SLOT(handlePaymentRequest(SendCoinsRecipient)));
         connect(window, SIGNAL(receivedURI(QString)),
@@ -537,8 +537,8 @@ int main(int argc, char* argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
 
-    Q_INIT_RESOURCE(colx_locale);
-    Q_INIT_RESOURCE(colx);
+    Q_INIT_RESOURCE(zeronode_locale);
+    Q_INIT_RESOURCE(zeronode);
 
     BitcoinApplication app(argc, argv);
 #if QT_VERSION > 0x050100

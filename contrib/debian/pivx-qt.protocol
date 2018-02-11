@@ -1,6 +1,6 @@
 [Protocol]
 exec=zeronode-qt '%u'
-protocol=colx
+protocol=zeronode
 input=none
 output=none
 helper=true

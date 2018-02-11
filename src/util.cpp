@@ -8,7 +8,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/colx-config.h"
+#include "config/zeronode-config.h"
 #endif
 
 #include "util.h"
@@ -107,7 +107,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-//COLX only features
+//ZeroNode only features
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
 string strMasterNodeAddr = "";
@@ -115,7 +115,7 @@ bool fLiteMode = false;
 bool fEnableSwiftTX = true;
 int nSwiftTXDepth = 5;
 int nObfuscationRounds = 2;
-int nAnonymizePivxAmount = 1000;
+int anonymizeNODEamount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
@@ -234,7 +234,7 @@ bool LogAcceptCategory(const char* category)
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
             // "node" is a composite category enabling all ZeroNode-related debug output
-            if (ptrCategory->count(string("colx"))) {
+            if (ptrCategory->count(string("zeronode"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swifttx"));
                 ptrCategory->insert(string("masternode"));
@@ -398,7 +398,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "colx";
+    const char* pszModule = "zeronode";
 #endif
     if (pex)
         return strprintf(
@@ -422,7 +422,7 @@ boost::filesystem::path GetDefaultDataDir()
 // Windows < Vista: C:\Documents and Settings\Username\Application Data\zeronode
 // Windows >= Vista: C:\Users\Username\AppData\Roaming\zeronode
 // Mac: ~/Library/Application Support/zeronode
-// Unix: ~/.colx
+// Unix: ~/.zeronode
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "zeronode";

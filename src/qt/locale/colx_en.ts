@@ -781,7 +781,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
+        <source>Request payments (generates QR codes and node: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -856,7 +856,7 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>Open a ZeroNode: URI or payment request</source>
+        <source>Open a node: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2661,7 +2661,7 @@ https://www.transifex.com/ZeroNode-project/ZeroNode-project-translations</source
     </message>
     <message>
         <location line="-108"/>
-        <source>Cannot start ZeroNode: click-to-pay handler</source>
+        <source>Cannot start node: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3972,7 +3972,7 @@ https://www.transifex.com/ZeroNode-project/ZeroNode-project-translations</source
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the ZeroNode: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ZeroNode network.</source>
+        <source>A message that was attached to the node: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ZeroNode network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

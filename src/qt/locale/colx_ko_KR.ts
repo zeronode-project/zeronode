@@ -610,8 +610,8 @@
         <translation>ZeroNode 주소로 전송하기</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
-        <translation>결제 요청 (QR 코드 및 ZeroNode: URI 생성)</translation>
+        <source>Request payments (generates QR codes and node: URIs)</source>
+        <translation>결제 요청 (QR 코드 및 node: URI 생성)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -670,8 +670,8 @@
         <translation>마스터노드 구성 파일 열기</translation>
     </message>
     <message>
-        <source>Open a ZeroNode: URI or payment request</source>
-        <translation>ZeroNode: URI 또는 ​​결제 요청 열기</translation>
+        <source>Open a node: URI or payment request</source>
+        <translation>node: URI 또는 ​​결제 요청 열기</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -2092,7 +2092,7 @@ https://www.transifex.com/ZeroNode-project/ZeroNode-project-translations</transl
         <translation>잘못된 결제 주소 %1</translation>
     </message>
     <message>
-        <source>Cannot start ZeroNode: click-to-pay handler</source>
+        <source>Cannot start node: click-to-pay handler</source>
         <translation>ZeroNode을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
@@ -3096,7 +3096,7 @@ https://www.transifex.com/ZeroNode-project/ZeroNode-project-translations</transl
         <translation>메세지:</translation>
     </message>
     <message>
-        <source>A message that was attached to the ZeroNode: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ZeroNode network.</source>
+        <source>A message that was attached to the node: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ZeroNode network.</source>
         <translation>참조용으로 트랜잭션과 함께 기록되는 ZeroNode : URI에 첨부된 메세지입니다. 참고: 이 메세지는 ZeroNode 네트워크를 통해 전송되지 않습니다.</translation>
     </message>
     <message>

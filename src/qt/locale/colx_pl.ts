@@ -526,8 +526,8 @@
         <translation>Wyślij monety do adresu ZeroNode</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i ZeroNode:URI)</translation>
+        <source>Request payments (generates QR codes and node: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i node:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a ZeroNode: URI or payment request</source>
-        <translation>Otwórz ZeroNode: URI i żądanie zapłaty</translation>
+        <source>Open a node: URI or payment request</source>
+        <translation>Otwórz node: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>

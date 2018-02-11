@@ -598,8 +598,8 @@
         <translation>Invia monete all' indirizzo ZeroNode</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e ZeroNode: URIs)</translation>
+        <source>Request payments (generates QR codes and node: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e node: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -638,8 +638,8 @@
         <translation>Impostazioni MultiSend</translation>
     </message>
     <message>
-        <source>Open a ZeroNode: URI or payment request</source>
-        <translation>Apri un ZeroNode: URI o richiesta di pagamento</translation>
+        <source>Open a node: URI or payment request</source>
+        <translation>Apri un node: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>Block explorer window</source>

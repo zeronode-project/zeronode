@@ -247,7 +247,7 @@ then
 fi
 
 # Set up build
-pushd ./colx
+pushd ./zeronode
 git fetch
 git checkout ${COMMIT}
 popd
@@ -256,7 +256,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./colx-binaries/${VERSION}
+	mkdir -p ./zeronode-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
@@ -266,7 +266,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../colx/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../zeronode/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -274,9 +274,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit colx=${COMMIT} --url colx=${url} ../colx/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../colx/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/colx-*.tar.gz build/out/src/colx-*.tar.gz ../colx-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit zeronode=${COMMIT} --url zeronode=${url} ../zeronode/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../zeronode/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/zeronode-*.tar.gz build/out/src/zeronode-*.tar.gz ../zeronode-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -284,10 +284,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit colx=${COMMIT} --url colx=${url} ../colx/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../colx/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/colx-*-win-unsigned.tar.gz inputs/colx-win-unsigned.tar.gz
-	    mv build/out/colx-*.zip build/out/colx-*.exe ../colx-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit zeronode=${COMMIT} --url zeronode=${url} ../zeronode/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../zeronode/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/zeronode-*-win-unsigned.tar.gz inputs/zeronode-win-unsigned.tar.gz
+	    mv build/out/zeronode-*.zip build/out/zeronode-*.exe ../zeronode-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -295,10 +295,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit colx=${COMMIT} --url colx=${url} ../colx/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../colx/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/colx-*-osx-unsigned.tar.gz inputs/colx-osx-unsigned.tar.gz
-	    mv build/out/colx-*.tar.gz build/out/colx-*.dmg ../colx-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit zeronode=${COMMIT} --url zeronode=${url} ../zeronode/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../zeronode/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/zeronode-*-osx-unsigned.tar.gz inputs/zeronode-osx-unsigned.tar.gz
+	    mv build/out/zeronode-*.tar.gz build/out/zeronode-*.dmg ../zeronode-binaries/${VERSION}
 	fi
 	popd
 
@@ -325,27 +325,27 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../colx/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../zeronode/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../colx/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../zeronode/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../colx/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../zeronode/contrib/gitian-descriptors/gitian-osx.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../colx/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../zeronode/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../colx/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../zeronode/contrib/gitian-descriptors/gitian-osx-signer.yml
 	popd
 fi
 
@@ -360,10 +360,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../colx/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../colx/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/colx-*win64-setup.exe ../colx-binaries/${VERSION}
-	    mv build/out/colx-*win32-setup.exe ../colx-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../zeronode/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../zeronode/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/zeronode-*win64-setup.exe ../zeronode-binaries/${VERSION}
+	    mv build/out/zeronode-*win32-setup.exe ../zeronode-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -371,9 +371,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../colx/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../colx/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/colx-osx-signed.dmg ../colx-binaries/${VERSION}/colx-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../zeronode/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../zeronode/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/zeronode-osx-signed.dmg ../zeronode-binaries/${VERSION}/zeronode-${VERSION}-osx.dmg
 	fi
 	popd
 

@@ -591,8 +591,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Skicka mynt till en ZeroNode adress</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
-        <translation>Begär betalning (genererar QR kod och ZeroNode: URls)</translation>
+        <source>Request payments (generates QR codes and node: URIs)</source>
+        <translation>Begär betalning (genererar QR kod och node: URls)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>

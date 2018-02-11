@@ -16,7 +16,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.colx.zeronode-qt";
+        return @"io.zeronode.zeronode-qt";
     } else {
         return [self __bundleIdentifier];
     }

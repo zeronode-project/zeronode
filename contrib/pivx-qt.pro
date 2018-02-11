@@ -5,7 +5,7 @@
 DEFINES += ENABLE_WALLET
 
 TEMPLATE = app
-TARGET = 
+TARGET =
 DEPENDPATH += . \
               src \
               src/compat \
@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/colx-config.h \
+           src/zeronode-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/colx-config.h \
+           src/config/zeronode-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -333,7 +333,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/colx.moc \
+           src/qt/zeronode.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -376,7 +376,7 @@ SOURCES += src/activemasternode.cpp \
            src/obfuscation.cpp \
            src/zeronode-cli.cpp \
            src/zeronode-tx.cpp \
-           src/colx.cpp \
+           src/zeronode.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -471,8 +471,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/colx.cpp \
-           src/qt/colxstrings.cpp \
+           src/qt/zeronode.cpp \
+           src/qt/zeronodestrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -550,7 +550,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_colx.cpp \
+           src/test/test_zeronode.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -641,21 +641,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/colx.qrc src/qt/colx_locale.qrc
+RESOURCES += src/qt/zeronode.qrc src/qt/zeronode_locale.qrc
 
-TRANSLATIONS += src/qt/locale/colx_bg.ts \
-                src/qt/locale/colx_de.ts \
-                src/qt/locale/colx_en.ts \
-                src/qt/locale/colx_es.ts \
-                src/qt/locale/colx_fi.ts \
-                src/qt/locale/colx_fr.ts \
-                src/qt/locale/colx_it.ts \
-                src/qt/locale/colx_ja.ts \
-                src/qt/locale/colx_pl.ts \
-                src/qt/locale/colx_pt.ts \
-                src/qt/locale/colx_ru.ts \
-                src/qt/locale/colx_sk.ts \
-                src/qt/locale/colx_sv.ts \
-                src/qt/locale/colx_vi.ts \
-                src/qt/locale/colx_zh_CN.ts \
-                src/qt/locale/colx_zh_TW.ts
+TRANSLATIONS += src/qt/locale/zeronode_bg.ts \
+                src/qt/locale/zeronode_de.ts \
+                src/qt/locale/zeronode_en.ts \
+                src/qt/locale/zeronode_es.ts \
+                src/qt/locale/zeronode_fi.ts \
+                src/qt/locale/zeronode_fr.ts \
+                src/qt/locale/zeronode_it.ts \
+                src/qt/locale/zeronode_ja.ts \
+                src/qt/locale/zeronode_pl.ts \
+                src/qt/locale/zeronode_pt.ts \
+                src/qt/locale/zeronode_ru.ts \
+                src/qt/locale/zeronode_sk.ts \
+                src/qt/locale/zeronode_sv.ts \
+                src/qt/locale/zeronode_vi.ts \
+                src/qt/locale/zeronode_zh_CN.ts \
+                src/qt/locale/zeronode_zh_TW.ts

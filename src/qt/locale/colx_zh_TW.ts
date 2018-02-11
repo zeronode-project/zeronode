@@ -590,7 +590,7 @@
         <translation>送出錢幣到 ZeroNode 地址</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
+        <source>Request payments (generates QR codes and node: URIs)</source>
         <translation>請求付款 (會產生 QR Code跟 ZeroNode 位址)</translation>
     </message>
     <message>
@@ -650,8 +650,8 @@
         <translation>打開Masternode設定檔</translation>
     </message>
     <message>
-        <source>Open a ZeroNode: URI or payment request</source>
-        <translation>打開ZeroNode: 位址或付款請求 </translation>
+        <source>Open a node: URI or payment request</source>
+        <translation>打開node: 位址或付款請求 </translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>

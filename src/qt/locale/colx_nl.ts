@@ -598,8 +598,8 @@
         <translation>Verstuur munten naar een ZeroNode adres</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en ZeroNode: URI's)</translation>
+        <source>Request payments (generates QR codes and node: URIs)</source>
+        <translation>Vraag betaling aan (genereert QR-codes en node: URI's)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>

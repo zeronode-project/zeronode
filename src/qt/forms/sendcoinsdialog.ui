@@ -1315,7 +1315,7 @@
         <string>S&amp;end</string>
        </property>
        <property name="icon">
-        <iconset resource="../colx.qrc">
+        <iconset resource="../zeronode.qrc">
          <normaloff>:/icons/send</normaloff>:/icons/send</iconset>
        </property>
        <property name="autoDefault">
@@ -1341,7 +1341,7 @@
         <string>Clear &amp;All</string>
        </property>
        <property name="icon">
-        <iconset resource="../colx.qrc">
+        <iconset resource="../zeronode.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
        <property name="autoDefault">
@@ -1358,7 +1358,7 @@
         <string>Add &amp;Recipient</string>
        </property>
        <property name="icon">
-        <iconset resource="../colx.qrc">
+        <iconset resource="../zeronode.qrc">
          <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
        </property>
        <property name="autoDefault">
@@ -1435,7 +1435,7 @@
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string notr="true">123.456 COLX</string>
+          <string notr="true">123.456 NODE</string>
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -1462,7 +1462,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../colx.qrc"/>
+  <include location="../zeronode.qrc"/>
  </resources>
  <connections/>
  <buttongroups>

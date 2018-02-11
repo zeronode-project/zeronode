@@ -546,8 +546,8 @@
         <translation>An eine ZeroNode-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und ZeroNode: URIs)</translation>
+        <source>Request payments (generates QR codes and node: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und node: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1774,7 +1774,7 @@ Adresse: %4</translation>
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the ZeroNode: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ZeroNode network.</source>
+        <source>A message that was attached to the node: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ZeroNode network.</source>
         <translation>Eine an die ZeroNode-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das ZeroNode-Netzwerk gesendet.</translation>
     </message>
     <message>

@@ -33,12 +33,12 @@ def check_json_precision():
         raise RuntimeError("JSON encode/decode loses precision")
 
 def determine_db_dir():
-    """Return the default location of the colx data directory"""
+    """Return the default location of the zeronode data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/COLX/")
+        return os.path.expanduser("~/Library/Application Support/ZERONODE/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "COLX")
-    return os.path.expanduser("~/.colx")
+        return os.path.join(os.environ['APPDATA'], "ZERONODE")
+    return os.path.expanduser("~/.zeronode")
 
 def read_bitcoin_config(dbdir):
     """Read the zeronode.conf file from dbdir, returns dictionary of settings"""
@@ -63,7 +63,7 @@ def read_bitcoin_config(dbdir):
     return dict(config_parser.items("all"))
 
 def connect_JSON(config):
-    """Connect to a colx JSON-RPC server"""
+    """Connect to a zeronode JSON-RPC server"""
     testnet = config.get('testnet', '0')
     testnet = (int(testnet) > 0)  # 0/1 in config file, convert to True/False
     if not 'rpcport' in config:
@@ -110,7 +110,7 @@ def list_available(zeronoded):
         vout = rawtx["vout"][output['vout']]
         pk = vout["scriptPubKey"]
 
-        # This code only deals with ordinary pay-to-colx-address
+        # This code only deals with ordinary pay-to-zeronode-address
         # or pay-to-script-hash outputs right now; anything exotic is ignored.
         if pk["type"] != "pubkeyhash" and pk["type"] != "scripthash":
             continue

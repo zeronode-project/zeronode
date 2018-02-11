@@ -6,7 +6,7 @@
 #define BITCOIN_CLIENTVERSION_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/colx-config.h"
+#include "config/zeronode-config.h"
 #else
 
 /**

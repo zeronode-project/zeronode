@@ -606,8 +606,8 @@
         <translation>Send mønter til en ZeroNode adresse</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ZeroNode: URIs)</source>
-        <translation>Anmod om betaling (genrerer QR kode og ZeroNode URL)</translation>
+        <source>Request payments (generates QR codes and node: URIs)</source>
+        <translation>Anmod om betaling (genrerer QR kode og node URL)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -666,8 +666,8 @@
         <translation>ÅbnMasternode konfigurationsfil</translation>
     </message>
     <message>
-        <source>Open a ZeroNode: URI or payment request</source>
-        <translation>Åbn en ZeroNode URl eller betalingsanmodning</translation>
+        <source>Open a node: URI or payment request</source>
+        <translation>Åbn en node URl eller betalingsanmodning</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -2059,8 +2059,8 @@ https://www.transifex.com/ZeroNode-project/ZeroNode-project-translations</transl
         <translation>Ugyldig betalingsadresse: %1</translation>
     </message>
     <message>
-        <source>Cannot start ZeroNode: click-to-pay handler</source>
-        <translation>Kan ikke starte ZeroNode "klik for at betale" systemet</translation>
+        <source>Cannot start node: click-to-pay handler</source>
+        <translation>Kan ikke starte node "klik for at betale" systemet</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid ZeroNode address or malformed URI parameters.</source>
@@ -3066,8 +3066,8 @@ https://www.transifex.com/ZeroNode-project/ZeroNode-project-translations</transl
         <translation>Besked</translation>
     </message>
     <message>
-        <source>A message that was attached to the ZeroNode: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ZeroNode network.</source>
-        <translation>En besked, der var vedhæftet til ZeroNode: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
+        <source>A message that was attached to the node: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ZeroNode network.</source>
+        <translation>En besked, der var vedhæftet til node: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
