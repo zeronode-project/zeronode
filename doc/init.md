@@ -35,10 +35,10 @@ generate one from the shell yourself like this:
 
 bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'
 
-Once you have a password in hand, set rpcpassword= in /etc/zernode/zernode.conf
+Once you have a password in hand, set rpcpassword= in /etc/zeronoded/zeronoded.conf
 
 For an example configuration file that describes the configuration settings,
-see contrib/debian/examples/zernode.conf.
+see contrib/debian/examples/zeronoded.conf.
 
 3. Paths
 ---------------------------------
@@ -46,15 +46,15 @@ see contrib/debian/examples/zernode.conf.
 All three configurations assume several paths that might need to be adjusted.
 
 Binary:              /usr/bin/zeronoded
-Configuration file:  /etc/zernode/zernode.conf
+Configuration file:  /etc/zeronoded/zeronoded.conf
 Data directory:      /var/lib/zeronoded
 PID file:            /var/run/zeronoded/zeronoded.pid (OpenRC and Upstart)
                      /var/lib/zeronoded/zeronoded.pid (systemd)
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by the zernode user and group.  It is advised for security
+should all be owned by the zeronoded user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-zernode user and group.  Access to zeronode-cli and other zeronoded rpc clients
+zeronoded user and group.  Access to zeronode-cli and other zeronoded rpc clients
 can then be controlled by group membership.
 
 4. Installing Service Configuration

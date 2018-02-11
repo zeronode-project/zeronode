@@ -46,7 +46,7 @@ In a typical situation, this suffices to run behind a Tor proxy:
 ./zeronoded -proxy=127.0.0.1:9050
 ```
 
-Run a ZeroNodehidden server
+Run a ZeroNode hidden server
 -------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also

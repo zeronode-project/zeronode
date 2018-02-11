@@ -229,12 +229,12 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
-  qt/res/icons/unit_zeronode.png \
-  qt/res/icons/unit_mzeronode.png \
-  qt/res/icons/unit_uzeronode.png \
-  qt/res/icons/unit_tzeronode.png \
-  qt/res/icons/unit_tmzeronode.png \
-  qt/res/icons/unit_tuzeronode.png
+  qt/res/icons/unit_NODE.png \
+  qt/res/icons/unit_mNODE.png \
+  qt/res/icons/unit_uNODE.png \
+  qt/res/icons/unit_tNODE.png \
+  qt/res/icons/unit_tmNODE.png \
+  qt/res/icons/unit_tuNODE.png
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
