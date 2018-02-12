@@ -89,7 +89,7 @@ use old versions of Upstart and do not supply the start-stop-daemon uitility.
 Copy zeronoded.init to /etc/init.d/zeronoded. Test by running "service zeronoded start".
 
 Using this script, you can adjust the path and flags to the zeronoded program by
-setting the COLXD and FLAGS environment variables in the file
+setting the ZNODED and FLAGS environment variables in the file
 /etc/sysconfig/zeronoded. You can also use the DAEMONOPTS environment variable here.
 
 5. Auto-respawn

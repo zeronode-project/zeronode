@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/colx-config.h \
+           src/znode-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/colx-config.h \
+           src/config/znode-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -333,7 +333,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/colx.moc \
+           src/qt/znode.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -374,9 +374,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/colx-cli.cpp \
-           src/colx-tx.cpp \
-           src/colx.cpp \
+           src/znode-cli.cpp \
+           src/znode-tx.cpp \
+           src/znode.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -471,8 +471,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/colx.cpp \
-           src/qt/colxstrings.cpp \
+           src/qt/znode.cpp \
+           src/qt/znodestrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -550,7 +550,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_colx.cpp \
+           src/test/test_znode.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -641,21 +641,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/colx.qrc src/qt/colx_locale.qrc
+RESOURCES += src/qt/znode.qrc src/qt/znode_locale.qrc
 
-TRANSLATIONS += src/qt/locale/colx_bg.ts \
-                src/qt/locale/colx_de.ts \
-                src/qt/locale/colx_en.ts \
-                src/qt/locale/colx_es.ts \
-                src/qt/locale/colx_fi.ts \
-                src/qt/locale/colx_fr.ts \
-                src/qt/locale/colx_it.ts \
-                src/qt/locale/colx_ja.ts \
-                src/qt/locale/colx_pl.ts \
-                src/qt/locale/colx_pt.ts \
-                src/qt/locale/colx_ru.ts \
-                src/qt/locale/colx_sk.ts \
-                src/qt/locale/colx_sv.ts \
-                src/qt/locale/colx_vi.ts \
-                src/qt/locale/colx_zh_CN.ts \
-                src/qt/locale/colx_zh_TW.ts
+TRANSLATIONS += src/qt/locale/znode_bg.ts \
+                src/qt/locale/znode_de.ts \
+                src/qt/locale/znode_en.ts \
+                src/qt/locale/znode_es.ts \
+                src/qt/locale/znode_fi.ts \
+                src/qt/locale/znode_fr.ts \
+                src/qt/locale/znode_it.ts \
+                src/qt/locale/znode_ja.ts \
+                src/qt/locale/znode_pl.ts \
+                src/qt/locale/znode_pt.ts \
+                src/qt/locale/znode_ru.ts \
+                src/qt/locale/znode_sk.ts \
+                src/qt/locale/znode_sv.ts \
+                src/qt/locale/znode_vi.ts \
+                src/qt/locale/znode_zh_CN.ts \
+                src/qt/locale/znode_zh_TW.ts

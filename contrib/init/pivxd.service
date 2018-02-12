@@ -1,19 +1,19 @@
 [Unit]
-Description=COLX's distributed currency daemon
+Description=ZNODE's distributed currency daemon
 After=network.target
 
 [Service]
-User=colx
-Group=colx
+User=znode
+Group=znode
 
 Type=forking
-PIDFile=/var/lib/colxd/colxd.pid
+PIDFile=/var/lib/znoded/znoded.pid
 
-ExecStart=/usr/bin/colxd -daemon -pid=/var/lib/colxd/colxd.pid \
-          -conf=/etc/colx/colx.conf -datadir=/var/lib/colxd
+ExecStart=/usr/bin/znoded -daemon -pid=/var/lib/znoded/znoded.pid \
+          -conf=/etc/znode/znode.conf -datadir=/var/lib/znoded
 
-ExecStop=-/usr/bin/colx-cli -conf=/etc/colx/colx.conf \
-         -datadir=/var/lib/colxd stop
+ExecStop=-/usr/bin/znode-cli -conf=/etc/znode/znode.conf \
+         -datadir=/var/lib/znoded stop
 
 Restart=always
 PrivateTmp=true

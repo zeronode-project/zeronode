@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * COLX RPC command dispatcher.
+ * ZNODE RPC command dispatcher.
  */
 class CRPCTable
 {
