@@ -1,4 +1,4 @@
-TOR SUPPORT IN COLX
+TOR SUPPORT IN ZNODE
 =======================
 
 It is possible to run ZeroNodeas a Tor hidden service, and connect to such services.
@@ -38,12 +38,12 @@ outgoing connections be anonymized, but more is possible.
 An example how to start the client if the Tor proxy is running on local host on
 port 9050 and only allows .onion nodes to connect:
 ```
-./colxd -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=dnetzj6l4cvo2fxy.onion:989
+./znoded -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=dnetzj6l4cvo2fxy.onion:989
 ```
 
 In a typical situation, this suffices to run behind a Tor proxy:
 ```
-./colxd -proxy=127.0.0.1:9050
+./znoded -proxy=127.0.0.1:9050
 ```
 
 Run a ZeroNodehidden server
@@ -69,12 +69,12 @@ NumEntryGuards 8
 ```
 
 The directory can be different of course, but (both) port numbers should be equal to
-your colxd's P2P listen port (51472 by default).
+your znoded's P2P listen port (51472 by default).
 ```
 -externalip=X   You can tell zeronode about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
                 configuration, you can find your onion address in
-                /var/lib/tor/colx-service/hostname. Onion addresses are given
+                /var/lib/tor/znode-service/hostname. Onion addresses are given
                 preference for your node to advertize itself with, for connections
                 coming from unroutable addresses (such as 127.0.0.1, where the
                 Tor proxy typically runs).
@@ -92,14 +92,14 @@ your colxd's P2P listen port (51472 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 ```
-./colxd -proxy=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -listen
+./znoded -proxy=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -listen
 ```
 
 (obviously, replace the Onion address with your own). If you don't care too much
 about hiding your node, and want to be reachable on IPv4 as well, additionally
 specify:
 ```
-./colxd ... -discover
+./znoded ... -discover
 ```
 
 and open port 51472 on your firewall (or use -upnp).
@@ -107,7 +107,7 @@ and open port 51472 on your firewall (or use -upnp).
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 ```
-./colxd -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
+./znoded -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
 ```
 
 List of known ZeroNodeTor relays
