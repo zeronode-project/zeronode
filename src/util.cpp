@@ -105,7 +105,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-//ZNODE only features
+//zNODE only features
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
 string strMasterNodeAddr = "";

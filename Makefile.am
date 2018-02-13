@@ -211,7 +211,7 @@ cov: test_znode.coverage/.dirstamp total.coverage/.dirstamp
 
 endif
 
-# ZNODE: disable the outdated comparison tool test
+# zNODE: disable the outdated comparison tool test
 # Ref https://github.com/bitcoin/bitcoin/issues/4545
 if USE_COMPARISON_TOOL
 check-local:

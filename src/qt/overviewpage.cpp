@@ -270,7 +270,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("ZNODE")
+    // update the display unit, to not use the default ("zNODE")
     updateDisplayUnit();
 }
 

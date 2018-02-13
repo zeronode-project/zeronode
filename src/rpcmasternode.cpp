@@ -445,7 +445,7 @@ Value masternode(const Array& params, bool fHelp)
             mnObj.push_back(Pair("message", activeMasternode.GetStatus()));
             return mnObj;
         }
-        throw runtime_error("Masternode not found in the list of available masternodes. Current status: " 
+        throw runtime_error("Masternode not found in the list of available masternodes. Current status: "
                             + activeMasternode.GetStatus() + "\n");
     }
 
@@ -571,7 +571,7 @@ Value masternodelist(const Array& params, bool fHelp)
             "    \"txhash\": \"hash\",    (string) Collateral transaction hash\n"
             "    \"outidx\": n,         (numeric) Collateral transaction output index\n"
             "    \"status\": s,         (string) Status (ENABLED/EXPIRED/REMOVE/etc)\n"
-            "    \"addr\": \"addr\",      (string) Masternode ZNODE address\n"
+            "    \"addr\": \"addr\",      (string) Masternode zNODE address\n"
             "    \"version\": v,        (numeric) Masternode protocol version\n"
             "    \"lastseen\": ttt,     (numeric) The time in seconds since epoch (Jan 1 1970 GMT) of the last seen\n"
             "    \"activetime\": ttt,   (numeric) The time in seconds since epoch (Jan 1 1970 GMT) masternode has been active\n"
