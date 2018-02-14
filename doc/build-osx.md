@@ -44,8 +44,8 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/ZNODE-Project/ZNODE.git
-        cd ZNODE
+        git clone https://github.com/zNODE-Project/zNODE.git
+        cd zNODE
 
 2.  Build zernoded:
 
@@ -104,14 +104,14 @@ directory. We have to first create the RPC configuration file, though.
 Run `./zernoded` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=znoderpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/ZNODE/znode.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/ZNODE/znode.conf"
+    echo -e "rpcuser=znoderpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/zNODE/znode.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/zNODE/znode.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/ZNODE/debug.log
+    tail -f $HOME/Library/Application\ Support/zNODE/debug.log
 
 Other commands:
 -------

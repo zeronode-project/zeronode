@@ -16,8 +16,8 @@ BITCOIND_USER=${BITCOIND_USER:-znode}
 BITCOIND_GROUP=${BITCOIND_GROUP:-znode}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/znoded}
 
-name="ZNODE Core Daemon"
-description="ZNODE crypto-currency p2p network daemon"
+name="zNODE Core Daemon"
+description="zNODE crypto-currency p2p network daemon"
 
 command="/usr/bin/znoded"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \

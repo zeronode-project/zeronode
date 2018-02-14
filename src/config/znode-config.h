@@ -1,9 +1,9 @@
 /* src/config/znode-config.h.  Generated from znode-config.h.in by configure.  */
 /* src/config/znode-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef ZNODE_CONFIG_H
+#ifndef zNODE_CONFIG_H
 
-#define ZNODE_CONFIG_H
+#define zNODE_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -346,4 +346,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //ZNODE_CONFIG_H
+#endif //zNODE_CONFIG_H

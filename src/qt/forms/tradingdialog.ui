@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="ZNODESupply">
+    <widget class="QLabel" name="zNODESupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="ZNODEDemand">
+    <widget class="QLabel" name="zNODEDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyZNODE">
+    <widget class="QPushButton" name="BuyzNODE">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1707,7 +1707,7 @@
       <string>zNODE</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputZNODE">
+    <widget class="QLineEdit" name="UnitsInputzNODE">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellZNODEBTN">
+    <widget class="QPushButton" name="SellzNODEBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1782,7 +1782,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="ZNODEAvailableLabel">
+       <widget class="QLabel" name="zNODEAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelZNODE">
+       <widget class="QLabel" name="labelzNODE">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="ZNODEBalanceLabel">
+    <widget class="QLabel" name="zNODEBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="ZNODEAvailableLabel_2">
+    <widget class="QLabel" name="zNODEAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2835,7 +2835,7 @@
       <string>zNODE Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="ZNODEPendingLabel">
+    <widget class="QLabel" name="zNODEPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
