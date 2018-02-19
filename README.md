@@ -1,7 +1,7 @@
 ZeroNode Core integration/staging repository
 =====================================
 
-ZeroNode is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
+ZeroNode (zNODE) is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
 - Anonymized transactions using coin mixing technology, we call it _Obfuscation_.
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftTX_.
 - Decentralized blockchain voting providing for consensus based advancement of the current Masternode

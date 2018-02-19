@@ -81,7 +81,7 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `zernoded` for your own use.
 
-zernoded/znode-cli binaries are not included in the zeronode-qt.app bundle.
+zernoded/znode-cli binaries are not included in the znode-qt.app bundle.
 
 If you are building `zernoded` or `zeronode-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
@@ -92,7 +92,7 @@ All dependencies should be compiled with these flags:
  -arch x86_64
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 
-Once dependencies are compiled, see release-process.md for how the zeronode-qt.app
+Once dependencies are compiled, see release-process.md for how the znode-qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
