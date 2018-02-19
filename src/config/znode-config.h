@@ -274,13 +274,13 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "www.znode.org"
+#define PACKAGE_BUGREPORT "zeronode.io"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Pivx Core"
+#define PACKAGE_NAME "ZeroNode Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Pivx Core 1.0.0"
+#define PACKAGE_STRING "ZeroNode Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "znode"

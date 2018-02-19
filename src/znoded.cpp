@@ -75,7 +75,7 @@ bool AppInit(int argc, char* argv[])
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  znoded [options]                     " + _("Start Pivx Core Daemon") + "\n";
+                        "  znoded [options]                     " + _("Start ZeroNode Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }

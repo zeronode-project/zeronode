@@ -148,9 +148,9 @@ The following new RPC commands are supported:
 - mnbudget "command"... ( "passphrase" )
  * prepare            - Prepare proposal for network by signing and creating tx
  * submit             - Submit proposal for network
- * vote-many          - Vote on a Pivx initiative
- * vote-alias         - Vote on a Pivx initiative
- * vote               - Vote on a Pivx initiative/budget
+ * vote-many          - Vote on a ZeroNode initiative
+ * vote-alias         - Vote on a ZeroNode initiative
+ * vote               - Vote on a ZeroNode initiative/budget
  * getvotes           - Show current masternode budgets
  * getinfo            - Show current masternode budgets
  * show               - Show all budgets
