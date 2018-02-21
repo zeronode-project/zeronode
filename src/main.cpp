@@ -1632,31 +1632,31 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
         nSubsidy = CAmount(10000000) * COIN; //premine has no budget allocation
     
     else if (nHeight < 1250)                 // 0.875 days
-        nSubsidy = 150 * nBudgetMultiplier;
+        nSubsidy = 150.0 * nBudgetMultiplier;
     
     else if (nHeight < 2500)                 // 1.75 days
-        nSubsidy = 175 * nBudgetMultiplier;
+        nSubsidy = 175.0 * nBudgetMultiplier;
     
     else if (nHeight < 5040)                 // 3.5 days
-        nSubsidy = 200 * nBudgetMultiplier;
+        nSubsidy = 200.0 * nBudgetMultiplier;
     
     else if (nHeight < 75060)                // 5 days
-        nSubsidy = 225 * nbudgetMultiplier;  
+        nSubsidy = 225.0 * nbudgetMultiplier;  
     
     else if (nHeight < 10080)                // 1 week
-        nSubsidy = 275 nBudgetMultiplier;
+        nSubsidy = 275.0 * nBudgetMultiplier;
     
     else if (nHeight < 40320)                // 4 weeks
-        nSubsidy = 250 nBudgetMultiplier;
+        nSubsidy = 250.0 * nBudgetMultiplier;
     
     else if (nHeight < 60480)                // 6 weeks
-        nSubsidy = 200 nBudgetMultiplier;
+        nSubsidy = 200.0 * nBudgetMultiplier;
     
     else if (nHeight < 80640)                // 8 weeks
-        nSubsidy = 175 * budgetMultiplier;
+        nSubsidy = 175.0 * nbudgetMultiplier;
     
     else if (nHeight < 120960)               // 12 weeks / 3 months
-        nSubsidy = 160 * nBudgetMultiplier;
+        nSubsidy = 160.0 * nBudgetMultiplier;
     
     else if (nHeight < 131040)               // 13 weeks -- every week from here on, 0.5ZNODE drop in inflation, for x years
         nSubsidy = 159.5 * nBudgetMultiplier;
@@ -1815,7 +1815,7 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
         nSubsidy = 134.0 * nBudgetMultiplier;
     
     else if (nHeight < 645120)
-    nSubsidy = 133.75 * nBudgetMultiplier;
+        nSubsidy = 133.75 * nBudgetMultiplier;
 
     else if (nHeight < 655200)
         nSubsidy = 133.5 * nBudgetMultiplier;
