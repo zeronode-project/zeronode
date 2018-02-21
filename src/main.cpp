@@ -1626,7 +1626,7 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
     if (!fBudgetBlock)
         nBudgetMultiplier = COIN - (Params().GetBudgetPercent() * CENT);
 
-    CAmount nSubsidy = ((50 * COIN) * nBudgetMultiplier);
+    CAmount nSubsidy = 15 * nBudgetMultiplier;
     
     if (nHeight == 1)
         nSubsidy = CAmount(10000000) * COIN; //premine has no budget allocation
@@ -3148,11 +3148,8 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
     
     else if (nHeight < 7800000)
         nSubsidy = 20.0 * nBudgetMultiplier;
-    
-    else if (nHeight < 10000000)
-        nSubsidy = 15.0 * nBudgetMultiplier;
-    
-    return 15.0 + nFees;
+
+    return nSubsidy + nFees;
 }
 
 int64_t GetMasternodePayment(CAmount nTotalBlockReward)
