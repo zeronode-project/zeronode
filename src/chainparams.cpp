@@ -103,19 +103,19 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // ZeroNode: 2 minute
-        nTargetSpacing = 1 * 60;  // ZeroNode: 2 minute
-        nLastPOWBlock = 225;
+        nTargetTimespan = 1 * 60; // ZeroNode: 1 minute
+        nTargetSpacing = 1 * 60;  // ZeroNode: 1 minute
+        nLastPOWBlock = 10080;
         nMaturity = 10;
         nMasternodeCountDrift = 20;
         nModifierUpdateBlock = 0;
         nMaxMoneyOut = int64_t(20000000000) * COIN;
         nModifierInterval = 60;
         nModifierIntervalRatio = 3;
-        nBudgetPercent = 5;
-        nMinStakeAge = 60*10; // ZeroNode: 10 minutes
-        nMasternodeRewardPercent = 60; // % of block reward that goes to masternodes
-        nRequiredMasternodeCollateral = 10000 * COIN; // 10,000 NODE
+        nBudgetPercent = 1;
+        nMinStakeAge = 60*60*12; // ZeroNode: 12 hours
+        nMasternodeRewardPercent = 85; // % of block reward that goes to masternodes
+        nRequiredMasternodeCollateral = 25000 * COIN; // 25,000 ZNODE
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
