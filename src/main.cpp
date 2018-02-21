@@ -1668,8 +1668,9 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
     else if (nHeight <= 65)
         nSubsidy = 160 * nBudgetMultiplier;
     else if (nHeight > 65)
-        nSubsidy = 160 - ((nHeight / 64) - 1)
-
+        nSubsidy = 160 - ((nHeight / 64) - 1) * nBudgetMultiplier;
+    else if (nHeight > 200)
+        nSubsidy = 100 * nBudgetMultiplier;
 
     return nSubsidy + nFees;
 }
