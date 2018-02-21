@@ -1,9 +1,9 @@
 /* src/config/znode-config.h.  Generated from znode-config.h.in by configure.  */
 /* src/config/znode-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef ZNODE_CONFIG_H
+#ifndef zNODE_CONFIG_H
 
-#define ZNODE_CONFIG_H
+#define zNODE_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -274,13 +274,13 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "www.znode.org"
+#define PACKAGE_BUGREPORT "zeronode.io"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Pivx Core"
+#define PACKAGE_NAME "ZeroNode Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Pivx Core 1.0.0"
+#define PACKAGE_STRING "ZeroNode Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "znode"
@@ -346,4 +346,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //ZNODE_CONFIG_H
+#endif //zNODE_CONFIG_H

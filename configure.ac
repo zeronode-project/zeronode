@@ -6,7 +6,7 @@ define(_CLIENT_VERSION_REVISION, 0)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2017)
-AC_INIT([Pivx Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.znode.org],[znode])
+AC_INIT([ZeroNode Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[zeronode.io],[znode])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([src/config/znode-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
@@ -14,9 +14,9 @@ AC_CONFIG_MACRO_DIR([build-aux/m4])
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef ZNODE_CONFIG_H])
-AH_TOP([#define ZNODE_CONFIG_H])
-AH_BOTTOM([#endif //ZNODE_CONFIG_H])
+AH_TOP([#ifndef zNODE_CONFIG_H])
+AH_TOP([#define zNODE_CONFIG_H])
+AH_BOTTOM([#endif //zNODE_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME

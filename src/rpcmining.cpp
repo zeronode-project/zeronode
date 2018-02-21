@@ -378,10 +378,10 @@ Value getblocktemplate(const Array& params, bool fHelp)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid mode");
 
     if (vNodes.empty())
-        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "ZNODE is not connected!");
+        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "zNODE is not connected!");
 
     if (IsInitialBlockDownload())
-        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "ZNODE is downloading blocks...");
+        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "zNODE is downloading blocks...");
 
     static unsigned int nTransactionsUpdatedLast;
 

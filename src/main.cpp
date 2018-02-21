@@ -41,7 +41,7 @@ using namespace boost;
 using namespace std;
 
 #if defined(NDEBUG)
-#error "ZNODE cannot be compiled without assertions."
+#error "zNODE cannot be compiled without assertions."
 #endif
 
 /**
@@ -1613,11 +1613,11 @@ double ConvertBitsToDouble(unsigned int nBits)
 int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
 {
     /**
-     * Block 1: 12 Billions ZNODE pre-mined
+     * Block 1: 12 Billions zNODE pre-mined
      Block Reward:
-     Blocks 2 - 151,200 - 2500 ZNODE
-     Blocks 151,201 - 302,399 - 1250 ZNODE
-     Blocks 302,400 - Infinite:  1000 ZNODE
+     Blocks 2 - 151,200 - 2500 zNODE
+     Blocks 151,201 - 302,399 - 1250 zNODE
+     Blocks 302,400 - Infinite:  1000 zNODE
      Proof of Stake Schedule - 5% to proposals for all phases
      95% distributed to stake wallet and master node
      */
@@ -1625,14 +1625,52 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
     int64_t nBudgetMultiplier = COIN;
     if (!fBudgetBlock)
         nBudgetMultiplier = COIN - (Params().GetBudgetPercent() * CENT);
-
+/* DRAFT OF REWARDS
     CAmount nSubsidy = 1000 * nBudgetMultiplier;
     if (nHeight == 1)
-        nSubsidy = CAmount(12000000000) * COIN; //premine has no budget allocation
-    else if (nHeight < 151201)
-        nSubsidy = 2500 * nBudgetMultiplier;
-    else if (nHeight < 302400)
-        nSubsidy = 1250 * nBudgetMultiplier;
+        nSubsidy = CAmount(10000000) * COIN; //premine has no budget allocation
+    else if (nHeight < 20160)
+        nSubsidy = 150 * nBudgetMultiplier;
+    else if (nHeight < 40320)
+        nSubsidy = 175 * nBudgetMultiplier;
+    else if (nHeight < 60480)
+        nSubsidy = 200 * nBudgetMultiplier;
+    else if (nHeight < 80640)
+        nSubsidy = 225 * nBudgetMultiplier;
+    else if (nHeight < 120960)
+        nSubsidy = 275 * nBudgetMultiplier;
+    else if (nHeight < 201600)
+        nSubsidy = 250 * nBudgetMultiplier;
+    else if (nHeight < 322560)
+        nSubsidy = 200 * nBudgetMultiplier;
+    else if (nHeight < 645120)
+        nSubsidy = 160 * nBudgetMultiplier;
+    else if (nHeight > 645120)
+        nSubsidy = 160 - (((nHeight / 645121) - 1) )
+*/
+    CAmount nSubsidy = 1000 * nBudgetMultiplier;
+    if (nHeight == 1)
+        nSubsidy = CAmount(10000000) * COIN; //premine has no budget allocation
+    else if (nHeight < 2)
+        nSubsidy = 150 * nBudgetMultiplier;
+    else if (nHeight < 4)
+        nSubsidy = 175 * nBudgetMultiplier;
+    else if (nHeight < 6)
+        nSubsidy = 200 * nBudgetMultiplier;
+    else if (nHeight < 8)
+        nSubsidy = 225 * nBudgetMultiplier;
+    else if (nHeight < 12)
+        nSubsidy = 275 * nBudgetMultiplier;
+    else if (nHeight < 20)
+        nSubsidy = 250 * nBudgetMultiplier;
+    else if (nHeight < 32)
+        nSubsidy = 200 * nBudgetMultiplier;
+    else if (nHeight <= 65)
+        nSubsidy = 160 * nBudgetMultiplier;
+    else if (nHeight > 65)
+        nSubsidy = 160 - ((nHeight / 64) - 1) * nBudgetMultiplier;
+    else if (nHeight > 200)
+        nSubsidy = 100 * nBudgetMultiplier;
 
     return nSubsidy + nFees;
 }
@@ -2178,7 +2216,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 nHeight = (*mi).second->nHeight + 1;
         }
 
-        // ZNODE
+        // zNODE
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.

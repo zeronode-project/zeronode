@@ -1,7 +1,7 @@
-TOR SUPPORT IN ZNODE
+TOR SUPPORT IN zNODE
 =======================
 
-It is possible to run ZeroNodeas a Tor hidden service, and connect to such services.
+It is possible to run ZeroNode as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others
@@ -10,7 +10,7 @@ port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.htm
 for how to properly configure Tor.
 
 
-Run ZeroNodebehind a Tor proxy
+Run ZeroNode behind a Tor proxy
 ----------------------------------
 
 The first step is running ZeroNodebehind a Tor proxy. This will already make all
@@ -46,7 +46,7 @@ In a typical situation, this suffices to run behind a Tor proxy:
 ./znoded -proxy=127.0.0.1:9050
 ```
 
-Run a ZeroNodehidden server
+Run a ZeroNode hidden server
 -------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
