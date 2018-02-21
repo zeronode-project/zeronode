@@ -3131,7 +3131,28 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
     else if (nHeight < 23677920)
         nSubsidy = 50.0 * nBudgetMultiplier;
     
-    return nSubsidy + nFees;
+    else if (nHeight < 26305920)
+        nSubsidy = 45.0 * nBudgetMultiplier;
+    
+    else if (nHeight < 31561920)
+        nSubsidy = 40.0 * nBudgetMultiplier;
+    
+    else if (nHeight < 3750000)
+        nSubsidy = 35.0 * nBudgetMultiplier;
+    
+    else if (nHeight < 4625000)
+        nSubsidy = 30.0 * nBudgetMultiplier;
+    
+    else if (nHeight < 6000000)
+        nSubsidy = 25.0 * nBudgetMultiplier;
+    
+    else if (nHeight < 7800000)
+        nSubsidy = 20.0 * nBudgetMultiplier;
+    
+    else if (nHeight < 10000000)
+        nSubsidy = 15.0 * nBudgetMultiplier;
+    
+    return 15.0 + nFees;
 }
 
 int64_t GetMasternodePayment(CAmount nTotalBlockReward)
