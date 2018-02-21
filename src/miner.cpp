@@ -31,7 +31,7 @@ using namespace std;
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// ZNODEMiner
+// zNODEMiner
 //
 
 //
@@ -420,7 +420,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("ZNODEMiner : generated block is stale");
+            return error("zNODEMiner : generated block is stale");
     }
 
     // Remove key from key pool
@@ -435,7 +435,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     // Process this block the same as if we had received it from another node
     CValidationState state;
     if (!ProcessNewBlock(state, NULL, pblock))
-        return error("ZNODEMiner : ProcessNewBlock, block not accepted");
+        return error("zNODEMiner : ProcessNewBlock, block not accepted");
 
     for (CNode* node : vNodes)
         node->PushInventory(CInv(MSG_BLOCK, pblock->GetHash()));
@@ -449,7 +449,7 @@ bool fGenerateBitcoins = false;
 
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("ZNODEMiner started\n");
+    LogPrintf("zNODEMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("znode-miner");
 
@@ -519,7 +519,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             continue;
         }
 
-        LogPrintf("Running ZNODEMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        LogPrintf("Running zNODEMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
             ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //

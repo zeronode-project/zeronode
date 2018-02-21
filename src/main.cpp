@@ -1625,14 +1625,52 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
     int64_t nBudgetMultiplier = COIN;
     if (!fBudgetBlock)
         nBudgetMultiplier = COIN - (Params().GetBudgetPercent() * CENT);
-
+/* DRAFT OF REWARDS
     CAmount nSubsidy = 1000 * nBudgetMultiplier;
     if (nHeight == 1)
-        nSubsidy = CAmount(12000000000) * COIN; //premine has no budget allocation
-    else if (nHeight < 151201)
-        nSubsidy = 2500 * nBudgetMultiplier;
-    else if (nHeight < 302400)
-        nSubsidy = 1250 * nBudgetMultiplier;
+        nSubsidy = CAmount(10000000) * COIN; //premine has no budget allocation
+    else if (nHeight < 20160)
+        nSubsidy = 150 * nBudgetMultiplier;
+    else if (nHeight < 40320)
+        nSubsidy = 175 * nBudgetMultiplier;
+    else if (nHeight < 60480)
+        nSubsidy = 200 * nBudgetMultiplier;
+    else if (nHeight < 80640)
+        nSubsidy = 225 * nBudgetMultiplier;
+    else if (nHeight < 120960)
+        nSubsidy = 275 * nBudgetMultiplier;
+    else if (nHeight < 201600)
+        nSubsidy = 250 * nBudgetMultiplier;
+    else if (nHeight < 322560)
+        nSubsidy = 200 * nBudgetMultiplier;
+    else if (nHeight < 645120)
+        nSubsidy = 160 * nBudgetMultiplier;
+    else if (nHeight > 645120)
+        nSubsidy = 160 - (((nHeight / 645121) - 1) )
+*/
+    CAmount nSubsidy = 1000 * nBudgetMultiplier;
+    if (nHeight == 1)
+        nSubsidy = CAmount(10000000) * COIN; //premine has no budget allocation
+    else if (nHeight < 2)
+        nSubsidy = 150 * nBudgetMultiplier;
+    else if (nHeight < 4)
+        nSubsidy = 175 * nBudgetMultiplier;
+    else if (nHeight < 6)
+        nSubsidy = 200 * nBudgetMultiplier;
+    else if (nHeight < 8)
+        nSubsidy = 225 * nBudgetMultiplier;
+    else if (nHeight < 12)
+        nSubsidy = 275 * nBudgetMultiplier;
+    else if (nHeight < 20)
+        nSubsidy = 250 * nBudgetMultiplier;
+    else if (nHeight < 32)
+        nSubsidy = 200 * nBudgetMultiplier;
+    else if (nHeight <= 65)
+        nSubsidy = 160 * nBudgetMultiplier;
+    else if (nHeight > 65)
+        nSubsidy = 160 - ((nHeight / 64) - 1) * nBudgetMultiplier;
+    else if (nHeight > 200)
+        nSubsidy = 100 * nBudgetMultiplier;
 
     return nSubsidy + nFees;
 }

@@ -1018,7 +1018,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "ZNODE " + FormatFullVersion();
+        string strDesc = "zNODE " + FormatFullVersion();
 
         try {
             while (true) {

@@ -17,7 +17,7 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "ZeroNode"
-            VALUE "FileDescription",    "znoded (OSS daemon/client for Pivx)"
+            VALUE "FileDescription",    "znoded (OSS daemon/client for ZeroNode)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "znoded"
             VALUE "LegalCopyright",     COPYRIGHT_STR

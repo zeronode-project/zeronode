@@ -10,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between znode-cli and znoded)
- * of a given instance of the Pivx system.
+ * of a given instance of the ZeroNode system.
  */
 class CBaseChainParams
 {
