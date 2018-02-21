@@ -1641,7 +1641,7 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
         nSubsidy = 200.0 * nBudgetMultiplier;
     
     else if (nHeight < 75060)                // 5 days
-        nSubsidy = 225.0 * nbudgetMultiplier;  
+        nSubsidy = 225.0 * nBudgetMultiplier;  
     
     else if (nHeight < 10080)                // 1 week
         nSubsidy = 275.0 * nBudgetMultiplier;
@@ -1653,7 +1653,7 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
         nSubsidy = 200.0 * nBudgetMultiplier;
     
     else if (nHeight < 80640)                // 8 weeks
-        nSubsidy = 175.0 * nbudgetMultiplier;
+        nSubsidy = 175.0 * nBudgetMultiplier;
     
     else if (nHeight < 120960)               // 12 weeks / 3 months
         nSubsidy = 160.0 * nBudgetMultiplier;
