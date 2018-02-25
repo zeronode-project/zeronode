@@ -2441,16 +2441,16 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
         nSubsidy = 15.5 * COIN;
     } else if (nHeight <= 2865078117 && nHeight >= 2836137935) {
         nSubsidy = 15.25 * COIN;
-    } else if (nHeight <= 4000000000 && nHeight >= 2865078118 {
-        nSubsidy = 15
-    } else if (nHeight <= 8000000000 && nHeight >= 4000000001 {
-        nSubsidy = 14
-    } else if (nHeight <= 16000000000 && nHeight >= 8000000001 {
-        nSubsidy = 13
-    } else if (nHeight <= 30000000000 && nHeight >= 16000000001 {
-        nSubsidy = 12
-    } else if (nHeight <= 50000000000 && nHeight >= 30000000001 {
-        nSubsidy = 11
+    } else if (nHeight <= 4000000000 && nHeight >= 2865078118) {
+        nSubsidy = 15;
+    } else if (nHeight <= 8000000000 && nHeight >= 4000000001) {
+        nSubsidy = 14;
+    } else if (nHeight <= 16000000000 && nHeight >= 8000000001) {
+        nSubsidy = 13;
+    } else if (nHeight <= 30000000000 && nHeight >= 16000000001) {
+        nSubsidy = 12;
+    } else if (nHeight <= 50000000000 && nHeight >= 30000000001) {
+        nSubsidy = 11;
     } else {
         nSubsidy = 10;
     }
