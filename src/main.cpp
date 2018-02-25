@@ -2451,7 +2451,7 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
         nSubsidy = 12
     } else if (nHeight <= 50000000000 && nHeight >= 30000000001 {
         nSubsidy = 11
-    else {
+    } else {
         nSubsidy = 10;
     }
     return nSubsidy + nFees;
