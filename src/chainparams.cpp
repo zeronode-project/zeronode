@@ -95,7 +95,7 @@ public:
         pchMessageStart[2] = 0xfe;
         pchMessageStart[3] = 0xea;
         vAlertPubKey = ParseHex("0000098d3ba6ba6e7423fa5cbd6a89e0a9a5300f88d33000005cb1a8b7ed2c1000335fc8dc4f012cb8241cc0bdafd6ca70c5f5448916e4e6f511ffffffffffffff");
-        nDefaultPort = 33733;
+        nDefaultPort = 33799;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // ZeroNode starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 30;
