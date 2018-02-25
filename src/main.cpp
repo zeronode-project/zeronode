@@ -2444,7 +2444,7 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
     } else if (nHeight <= 2865078117 && nHeight >= 2836137935) {
         nSubsidy = 15.25 * COIN;
     } else {
-        nSubsidy = 15 
+        nSubsidy = 15;
     }
     return nSubsidy + nFees;
 }
