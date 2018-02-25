@@ -1626,25 +1626,835 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
     
     //Be sure to re-add budget multiplier 
     if (nHeight == 0) {
-        nSubsidy = 100 * COIN;
-    } else if (nHeight <= 19 && nHeight >= 0) {
-        nSubsidy = 50 * COIN;
+        nSubsidy = 250000 * COIN;
+    } else if (nHeight <= 5 && nHeight >= 1) {
+        nSubsidy = 2500000 * COIN;
+    } else if (nHeight <= 19 && nHeight >= 6) {
+        nSubsidy = 250 * COIN;
     } else if (nHeight <= 39 && nHeight >= 20) {
-        nSubsidy = 49 * COIN;
+        nSubsidy = 235 * COIN;
     } else if (nHeight <= 59 && nHeight >= 40) {
-        nSubsidy = 48 * COIN;
+        nSubsidy = 220 * COIN;
     } else if (nHeight <= 79 && nHeight >= 60) {
-        nSubsidy = 36 * COIN;
+        nSubsidy = 200 * COIN;
     } else if (nHeight <= 99 && nHeight >= 80) {
-        nSubsidy = 15 * COIN;
+        nSubsidy = 175 * COIN;
     } else if (nHeight <= 199 && nHeight >= 150) {
-        nSubsidy = 13.5 * COIN;
+        nSubsidy = 150 * COIN;
     } else if (nHeight <= 499 && nHeight >= 200) {
-        nSubsidy = 9 * COIN;
-    } else if (nHeight >= 500) {
-        nSubsidy = 4.5 * COIN;
-    } else {
-        nSubsidy = 0 * COIN;
+        nSubsidy = 125 * COIN;
+    } else if (nHeight <= 599 && nHeight >=500) {
+        nSubsidy = 115 * COIN;
+    } else if (nHeight <= 750 && nHeight >= 600) {
+        nSubsidy = 114.75 * COIN;
+    } else if (nHeight <= 10581 && nHeight >= 751) {
+        nSubsidy = 114.5 * COIN;
+    } else if (nHeight <= 20661 && nHeight >= 10582) {
+        nSubsidy = 114.25 * COIN;
+    } else if (nHeight <= 30741 && nHeight >= 20662) {
+        nSubsidy = 114.0 * COIN;
+    } else if (nHeight <= 40821 && nHeight >= 30742) {
+        nSubsidy = 113.75 * COIN;
+    } else if (nHeight <= 50901 && nHeight >= 40822) {
+        nSubsidy = 113.5 * COIN;
+    } else if (nHeight <= 60981 && nHeight >= 50902) {
+        nSubsidy = 113.25 * COIN;
+    } else if (nHeight <= 71061 && nHeight >= 60982) {
+        nSubsidy = 113.0 * COIN;
+    } else if (nHeight <= 81141 && nHeight >= 71062) {
+        nSubsidy = 112.75 * COIN;
+    } else if (nHeight <= 91221 && nHeight >= 81142) {
+        nSubsidy = 112.5 * COIN;
+    } else if (nHeight <= 101301 && nHeight >= 91222) {
+        nSubsidy = 112.25 * COIN;
+    } else if (nHeight <= 111381 && nHeight >= 101302) {
+        nSubsidy = 112.0 * COIN;
+    } else if (nHeight <= 121461 && nHeight >= 111382) {
+        nSubsidy = 111.75 * COIN;
+    } else if (nHeight <= 131541 && nHeight >= 121462) {
+        nSubsidy = 111.5 * COIN;
+    } else if (nHeight <= 141621 && nHeight >= 131542) {
+        nSubsidy = 111.25 * COIN;
+    } else if (nHeight <= 151701 && nHeight >= 141622) {
+        nSubsidy = 111.0 * COIN;
+    } else if (nHeight <= 161781 && nHeight >= 151702) {
+        nSubsidy = 110.75 * COIN;
+    } else if (nHeight <= 171861 && nHeight >= 161782) {
+        nSubsidy = 110.5 * COIN;
+    } else if (nHeight <= 181941 && nHeight >= 171862) {
+        nSubsidy = 110.25 * COIN;
+    } else if (nHeight <= 192021 && nHeight >= 181942) {
+        nSubsidy = 110.0 * COIN;
+    } else if (nHeight <= 202101 && nHeight >= 192022) {
+        nSubsidy = 109.75 * COIN;
+    } else if (nHeight <= 212181 && nHeight >= 202102) {
+        nSubsidy = 109.5 * COIN;
+    } else if (nHeight <= 222261 && nHeight >= 212182) {
+        nSubsidy = 109.25 * COIN;
+    } else if (nHeight <= 232341 && nHeight >= 222262) {
+        nSubsidy = 109.0 * COIN;
+    } else if (nHeight <= 242421 && nHeight >= 232342) {
+        nSubsidy = 108.75 * COIN;
+    } else if (nHeight <= 252501 && nHeight >= 242422) {
+        nSubsidy = 108.5 * COIN;
+    } else if (nHeight <= 262581 && nHeight >= 252502) {
+        nSubsidy = 108.25 * COIN;
+    } else if (nHeight <= 272661 && nHeight >= 262582) {
+        nSubsidy = 108.0 * COIN;
+    } else if (nHeight <= 282741 && nHeight >= 272662) {
+        nSubsidy = 107.75 * COIN;
+    } else if (nHeight <= 292821 && nHeight >= 282742) {
+        nSubsidy = 107.5 * COIN;
+    } else if (nHeight <= 302901 && nHeight >= 292822) {
+        nSubsidy = 107.25 * COIN;
+    } else if (nHeight <= 312981 && nHeight >= 302902) {
+        nSubsidy = 107.0 * COIN;
+    } else if (nHeight <= 323061 && nHeight >= 312982) {
+        nSubsidy = 106.75 * COIN;
+    } else if (nHeight <= 333141 && nHeight >= 323062) {
+        nSubsidy = 106.5 * COIN;
+    } else if (nHeight <= 343221 && nHeight >= 333142) {
+        nSubsidy = 106.25 * COIN;
+    } else if (nHeight <= 353301 && nHeight >= 343222) {
+        nSubsidy = 106.0 * COIN;
+    } else if (nHeight <= 363381 && nHeight >= 353302) {
+        nSubsidy = 105.75 * COIN;
+    } else if (nHeight <= 373461 && nHeight >= 363382) {
+        nSubsidy = 105.5 * COIN;
+    } else if (nHeight <= 383541 && nHeight >= 373462) {
+        nSubsidy = 105.25 * COIN;
+    } else if (nHeight <= 393621 && nHeight >= 383542) {
+        nSubsidy = 105.0 * COIN;
+    } else if (nHeight <= 403701 && nHeight >= 393622) {
+        nSubsidy = 104.75 * COIN;
+    } else if (nHeight <= 413781 && nHeight >= 403702) {
+        nSubsidy = 104.5 * COIN;
+    } else if (nHeight <= 423861 && nHeight >= 413782) {
+        nSubsidy = 104.25 * COIN;
+    } else if (nHeight <= 433941 && nHeight >= 423862) {
+        nSubsidy = 104.0 * COIN;
+    } else if (nHeight <= 444021 && nHeight >= 433942) {
+        nSubsidy = 103.75 * COIN;
+    } else if (nHeight <= 454101 && nHeight >= 444022) {
+        nSubsidy = 103.5 * COIN;
+    } else if (nHeight <= 464181 && nHeight >= 454102) {
+        nSubsidy = 103.25 * COIN;
+    } else if (nHeight <= 474261 && nHeight >= 464182) {
+        nSubsidy = 103.0 * COIN;
+    } else if (nHeight <= 484341 && nHeight >= 474262) {
+        nSubsidy = 102.75 * COIN;
+    } else if (nHeight <= 494421 && nHeight >= 484342) {
+        nSubsidy = 102.5 * COIN;
+    } else if (nHeight <= 504501 && nHeight >= 494422) {
+        nSubsidy = 102.25 * COIN;
+    } else if (nHeight <= 514581 && nHeight >= 504502) {
+        nSubsidy = 102.0 * COIN;
+    } else if (nHeight <= 524661 && nHeight >= 514582) {
+        nSubsidy = 101.75 * COIN;
+    } else if (nHeight <= 534741 && nHeight >= 524662) {
+        nSubsidy = 101.5 * COIN;
+    } else if (nHeight <= 544821 && nHeight >= 534742) {
+        nSubsidy = 101.25 * COIN;
+    } else if (nHeight <= 554901 && nHeight >= 544822) {
+        nSubsidy = 101.0 * COIN;
+    } else if (nHeight <= 564981 && nHeight >= 554902) {
+        nSubsidy = 100.75 * COIN;
+    } else if (nHeight <= 575061 && nHeight >= 564982) {
+        nSubsidy = 100.5 * COIN;
+    } else if (nHeight <= 585141 && nHeight >= 575062) {
+        nSubsidy = 100.25 * COIN;
+    } else if (nHeight <= 595221 && nHeight >= 585142) {
+        nSubsidy = 100.0 * COIN;
+    } else if (nHeight <= 605301 && nHeight >= 595222) {
+        nSubsidy = 99.75 * COIN;
+    } else if (nHeight <= 615381 && nHeight >= 605302) {
+        nSubsidy = 99.5 * COIN;
+    } else if (nHeight <= 625461 && nHeight >= 615382) {
+        nSubsidy = 99.25 * COIN;
+    } else if (nHeight <= 635541 && nHeight >= 625462) {
+        nSubsidy = 99.0 * COIN;
+    } else if (nHeight <= 645621 && nHeight >= 635542) {
+        nSubsidy = 98.75 * COIN;
+    } else if (nHeight <= 655701 && nHeight >= 645622) {
+        nSubsidy = 98.5 * COIN;
+    } else if (nHeight <= 665781 && nHeight >= 655702) {
+        nSubsidy = 98.25 * COIN;
+    } else if (nHeight <= 675861 && nHeight >= 665782) {
+        nSubsidy = 98.0 * COIN;
+    } else if (nHeight <= 685941 && nHeight >= 675862) {
+        nSubsidy = 97.75 * COIN;
+    } else if (nHeight <= 696021 && nHeight >= 685942) {
+        nSubsidy = 97.5 * COIN;
+    } else if (nHeight <= 706101 && nHeight >= 696022) {
+        nSubsidy = 97.25 * COIN;
+    } else if (nHeight <= 716181 && nHeight >= 706102) {
+        nSubsidy = 97.0 * COIN;
+    } else if (nHeight <= 726261 && nHeight >= 716182) {
+        nSubsidy = 96.75 * COIN;
+    } else if (nHeight <= 736341 && nHeight >= 726262) {
+        nSubsidy = 96.5 * COIN;
+    } else if (nHeight <= 746421 && nHeight >= 736342) {
+        nSubsidy = 96.25 * COIN;
+    } else if (nHeight <= 756501 && nHeight >= 746422) {
+        nSubsidy = 96.0 * COIN;
+    } else if (nHeight <= 766581 && nHeight >= 756502) {
+        nSubsidy = 95.75 * COIN;
+    } else if (nHeight <= 776661 && nHeight >= 766582) {
+        nSubsidy = 95.5 * COIN;
+    } else if (nHeight <= 786741 && nHeight >= 776662) {
+        nSubsidy = 95.25 * COIN;
+    } else if (nHeight <= 796821 && nHeight >= 786742) {
+        nSubsidy = 95.0 * COIN;
+    } else if (nHeight <= 806901 && nHeight >= 796822) {
+        nSubsidy = 94.75 * COIN;
+    } else if (nHeight <= 816981 && nHeight >= 806902) {
+        nSubsidy = 94.5 * COIN;
+    } else if (nHeight <= 827061 && nHeight >= 816982) {
+        nSubsidy = 94.25 * COIN;
+    } else if (nHeight <= 837141 && nHeight >= 827062) {
+        nSubsidy = 94.0 * COIN;
+    } else if (nHeight <= 847221 && nHeight >= 837142) {
+        nSubsidy = 93.75 * COIN;
+    } else if (nHeight <= 857301 && nHeight >= 847222) {
+        nSubsidy = 93.5 * COIN;
+    } else if (nHeight <= 867381 && nHeight >= 857302) {
+        nSubsidy = 93.25 * COIN;
+    } else if (nHeight <= 877461 && nHeight >= 867382) {
+        nSubsidy = 93.0 * COIN;
+    } else if (nHeight <= 887541 && nHeight >= 877462) {
+        nSubsidy = 92.75 * COIN;
+    } else if (nHeight <= 897621 && nHeight >= 887542) {
+        nSubsidy = 92.5 * COIN;
+    } else if (nHeight <= 907701 && nHeight >= 897622) {
+        nSubsidy = 92.25 * COIN;
+    } else if (nHeight <= 917781 && nHeight >= 907702) {
+        nSubsidy = 92.0 * COIN;
+    } else if (nHeight <= 927861 && nHeight >= 917782) {
+        nSubsidy = 91.75 * COIN;
+    } else if (nHeight <= 937941 && nHeight >= 927862) {
+        nSubsidy = 91.5 * COIN;
+    } else if (nHeight <= 948021 && nHeight >= 937942) {
+        nSubsidy = 91.25 * COIN;
+    } else if (nHeight <= 958101 && nHeight >= 948022) {
+        nSubsidy = 91.0 * COIN;
+    } else if (nHeight <= 968181 && nHeight >= 958102) {
+        nSubsidy = 90.75 * COIN;
+    } else if (nHeight <= 978261 && nHeight >= 968182) {
+        nSubsidy = 90.5 * COIN;
+    } else if (nHeight <= 988341 && nHeight >= 978262) {
+        nSubsidy = 90.25 * COIN;
+    } else if (nHeight <= 998421 && nHeight >= 988342) {
+        nSubsidy = 90.0 * COIN;
+    } else if (nHeight <= 998422 && nHeight >= 958103) {
+        nSubsidy = 89.75 * COIN;
+    } else if (nHeight <= 1038742 && nHeight >= 998423) {
+        nSubsidy = 89.5 * COIN;
+    } else if (nHeight <= 1079062 && nHeight >= 1038743) {
+        nSubsidy = 89.25 * COIN;
+    } else if (nHeight <= 1119382 && nHeight >= 1079063) {
+        nSubsidy = 89.0 * COIN;
+    } else if (nHeight <= 1159702 && nHeight >= 1119383) {
+        nSubsidy = 88.75 * COIN;
+    } else if (nHeight <= 1200022 && nHeight >= 1159703) {
+        nSubsidy = 88.5 * COIN;
+    } else if (nHeight <= 1240342 && nHeight >= 1200023) {
+        nSubsidy = 88.25 * COIN;
+    } else if (nHeight <= 1280662 && nHeight >= 1240343) {
+        nSubsidy = 88.0 * COIN;
+    } else if (nHeight <= 1320982 && nHeight >= 1280663) {
+        nSubsidy = 87.75 * COIN;
+    } else if (nHeight <= 1361302 && nHeight >= 1320983) {
+        nSubsidy = 87.5 * COIN;
+    } else if (nHeight <= 1401622 && nHeight >= 1361303) {
+        nSubsidy = 87.25 * COIN;
+    } else if (nHeight <= 1441942 && nHeight >= 1401623) {
+        nSubsidy = 87.0 * COIN;
+    } else if (nHeight <= 1482262 && nHeight >= 1441943) {
+        nSubsidy = 86.75 * COIN;
+    } else if (nHeight <= 1522582 && nHeight >= 1482263) {
+        nSubsidy = 86.5 * COIN;
+    } else if (nHeight <= 1562902 && nHeight >= 1522583) {
+        nSubsidy = 86.25 * COIN;
+    } else if (nHeight <= 1603222 && nHeight >= 1562903) {
+        nSubsidy = 86.0 * COIN;
+    } else if (nHeight <= 1643542 && nHeight >= 1603223) {
+        nSubsidy = 85.75 * COIN;
+    } else if (nHeight <= 1683862 && nHeight >= 1643543) {
+        nSubsidy = 85.5 * COIN;
+    } else if (nHeight <= 1724182 && nHeight >= 1683863) {
+        nSubsidy = 85.25 * COIN;
+    } else if (nHeight <= 1764502 && nHeight >= 1724183) {
+        nSubsidy = 85.0 * COIN;
+    } else if (nHeight <= 1804822 && nHeight >= 1764503) {
+        nSubsidy = 84.75 * COIN;
+    } else if (nHeight <= 1845142 && nHeight >= 1804823) {
+        nSubsidy = 84.5 * COIN;
+    } else if (nHeight <= 1885462 && nHeight >= 1845143) {
+        nSubsidy = 84.25 * COIN;
+    } else if (nHeight <= 1925782 && nHeight >= 1885463) {
+        nSubsidy = 84.0 * COIN;
+    } else if (nHeight <= 1966102 && nHeight >= 1925783) {
+        nSubsidy = 83.75 * COIN;
+    } else if (nHeight <= 2006422 && nHeight >= 1966103) {
+        nSubsidy = 83.5 * COIN;
+    } else if (nHeight <= 2046742 && nHeight >= 2006423) {
+        nSubsidy = 83.25 * COIN;
+    } else if (nHeight <= 2087062 && nHeight >= 2046743) {
+        nSubsidy = 83.0 * COIN;
+    } else if (nHeight <= 2127382 && nHeight >= 2087063) {
+        nSubsidy = 82.75 * COIN;
+    } else if (nHeight <= 2167702 && nHeight >= 2127383) {
+        nSubsidy = 82.5 * COIN;
+    } else if (nHeight <= 2208022 && nHeight >= 2167703) {
+        nSubsidy = 82.25 * COIN;
+    } else if (nHeight <= 2248342 && nHeight >= 2208023) {
+        nSubsidy = 82.0 * COIN;
+    } else if (nHeight <= 2288662 && nHeight >= 2248343) {
+        nSubsidy = 81.75 * COIN;
+    } else if (nHeight <= 2328982 && nHeight >= 2288663) {
+        nSubsidy = 81.5 * COIN;
+    } else if (nHeight <= 2369302 && nHeight >= 2328983) {
+        nSubsidy = 81.25 * COIN;
+    } else if (nHeight <= 2409622 && nHeight >= 2369303) {
+        nSubsidy = 81.0 * COIN;
+    } else if (nHeight <= 2449942 && nHeight >= 2409623) {
+        nSubsidy = 80.75 * COIN;
+    } else if (nHeight <= 2490262 && nHeight >= 2449943) {
+        nSubsidy = 80.5 * COIN;
+    } else if (nHeight <= 2530582 && nHeight >= 2490263) {
+        nSubsidy = 80.25 * COIN;
+    } else if (nHeight <= 2570902 && nHeight >= 2530583) {
+        nSubsidy = 80.0 * COIN;
+    } else if (nHeight <= 2611222 && nHeight >= 2570903) {
+        nSubsidy = 79.75 * COIN;
+    } else if (nHeight <= 2651542 && nHeight >= 2611223) {
+        nSubsidy = 79.5 * COIN;
+    } else if (nHeight <= 2691862 && nHeight >= 2651543) {
+        nSubsidy = 79.25 * COIN;
+    } else if (nHeight <= 2732182 && nHeight >= 2691863) {
+        nSubsidy = 79.0 * COIN;
+    } else if (nHeight <= 2772502 && nHeight >= 2732183) {
+        nSubsidy = 78.75 * COIN;
+    } else if (nHeight <= 2812822 && nHeight >= 2772503) {
+        nSubsidy = 78.5 * COIN;
+    } else if (nHeight <= 2853142 && nHeight >= 2812823) {
+        nSubsidy = 78.25 * COIN;
+    } else if (nHeight <= 2893462 && nHeight >= 2853143) {
+        nSubsidy = 78.0 * COIN;
+    } else if (nHeight <= 2933782 && nHeight >= 2893463) {
+        nSubsidy = 77.75 * COIN;
+    } else if (nHeight <= 2974102 && nHeight >= 2933783) {
+        nSubsidy = 77.5 * COIN;
+    } else if (nHeight <= 3014422 && nHeight >= 2974103) {
+        nSubsidy = 77.25 * COIN;
+    } else if (nHeight <= 3054742 && nHeight >= 3014423) {
+        nSubsidy = 77.0 * COIN;
+    } else if (nHeight <= 3095062 && nHeight >= 3054743) {
+        nSubsidy = 76.75 * COIN;
+    } else if (nHeight <= 3135382 && nHeight >= 3095063) {
+        nSubsidy = 76.5 * COIN;
+    } else if (nHeight <= 3175702 && nHeight >= 3135383) {
+        nSubsidy = 76.25 * COIN;
+    } else if (nHeight <= 3216022 && nHeight >= 3175703) {
+        nSubsidy = 76.0 * COIN;
+    } else if (nHeight <= 3256342 && nHeight >= 3216023) {
+        nSubsidy = 75.75 * COIN;
+    } else if (nHeight <= 3296662 && nHeight >= 3256343) {
+        nSubsidy = 75.5 * COIN;
+    } else if (nHeight <= 3336982 && nHeight >= 3296663) {
+        nSubsidy = 75.25 * COIN;
+    } else if (nHeight <= 3377302 && nHeight >= 3336983) {
+        nSubsidy = 75.0 * COIN;
+    } else if (nHeight <= 3417622 && nHeight >= 3377303) {
+        nSubsidy = 74.75 * COIN;
+    } else if (nHeight <= 3457942 && nHeight >= 3417623) {
+        nSubsidy = 74.5 * COIN;
+    } else if (nHeight <= 3498262 && nHeight >= 3457943) {
+        nSubsidy = 74.25 * COIN;
+    } else if (nHeight <= 3538582 && nHeight >= 3498263) {
+        nSubsidy = 74.0 * COIN;
+    } else if (nHeight <= 3578902 && nHeight >= 3538583) {
+        nSubsidy = 73.75 * COIN;
+    } else if (nHeight <= 3619222 && nHeight >= 3578903) {
+        nSubsidy = 73.5 * COIN;
+    } else if (nHeight <= 3659542 && nHeight >= 3619223) {
+        nSubsidy = 73.25 * COIN;
+    } else if (nHeight <= 3699862 && nHeight >= 3659543) {
+        nSubsidy = 73.0 * COIN;
+    } else if (nHeight <= 3740182 && nHeight >= 3699863) {
+        nSubsidy = 72.75 * COIN;
+    } else if (nHeight <= 3780502 && nHeight >= 3740183) {
+        nSubsidy = 72.5 * COIN;
+    } else if (nHeight <= 3820822 && nHeight >= 3780503) {
+        nSubsidy = 72.25 * COIN;
+    } else if (nHeight <= 3861142 && nHeight >= 3820823) {
+        nSubsidy = 72.0 * COIN;
+    } else if (nHeight <= 3901462 && nHeight >= 3861143) {
+        nSubsidy = 71.75 * COIN;
+    } else if (nHeight <= 3941782 && nHeight >= 3901463) {
+        nSubsidy = 71.5 * COIN;
+    } else if (nHeight <= 3982102 && nHeight >= 3941783) {
+        nSubsidy = 71.25 * COIN;
+    } else if (nHeight <= 4022422 && nHeight >= 3982103) {
+        nSubsidy = 71.0 * COIN;
+    } else if (nHeight <= 4062742 && nHeight >= 4022423) {
+        nSubsidy = 70.75 * COIN;
+    } else if (nHeight <= 4103062 && nHeight >= 4062743) {
+        nSubsidy = 70.5 * COIN;
+    } else if (nHeight <= 4143382 && nHeight >= 4103063) {
+        nSubsidy = 70.25 * COIN;
+    } else if (nHeight <= 4183702 && nHeight >= 4143383) {
+        nSubsidy = 70.0 * COIN;
+    } else if (nHeight <= 4224022 && nHeight >= 4183703) {
+        nSubsidy = 69.75 * COIN;
+    } else if (nHeight <= 4264342 && nHeight >= 4224023) {
+        nSubsidy = 69.5 * COIN;
+    } else if (nHeight <= 4304662 && nHeight >= 4264343) {
+        nSubsidy = 69.25 * COIN;
+    } else if (nHeight <= 4344982 && nHeight >= 4304663) {
+        nSubsidy = 69.0 * COIN;
+    } else if (nHeight <= 4385302 && nHeight >= 4344983) {
+        nSubsidy = 68.75 * COIN;
+    } else if (nHeight <= 4425622 && nHeight >= 4385303) {
+        nSubsidy = 68.5 * COIN;
+    } else if (nHeight <= 4465942 && nHeight >= 4425623) {
+        nSubsidy = 68.25 * COIN;
+    } else if (nHeight <= 4506262 && nHeight >= 4465943) {
+        nSubsidy = 68.0 * COIN;
+    } else if (nHeight <= 4546582 && nHeight >= 4506263) {
+        nSubsidy = 67.75 * COIN;
+    } else if (nHeight <= 4586902 && nHeight >= 4546583) {
+        nSubsidy = 67.5 * COIN;
+    } else if (nHeight <= 4627222 && nHeight >= 4586903) {
+        nSubsidy = 67.25 * COIN;
+    } else if (nHeight <= 4667542 && nHeight >= 4627223) {
+        nSubsidy = 67.0 * COIN;
+    } else if (nHeight <= 4707862 && nHeight >= 4667543) {
+        nSubsidy = 66.75 * COIN;
+    } else if (nHeight <= 4748182 && nHeight >= 4707863) {
+        nSubsidy = 66.5 * COIN;
+    } else if (nHeight <= 4788502 && nHeight >= 4748183) {
+        nSubsidy = 66.25 * COIN;
+    } else if (nHeight <= 4828822 && nHeight >= 4788503) {
+        nSubsidy = 66.0 * COIN;
+    } else if (nHeight <= 4869142 && nHeight >= 4828823) {
+        nSubsidy = 65.75 * COIN;
+    } else if (nHeight <= 4909462 && nHeight >= 4869143) {
+        nSubsidy = 65.5 * COIN;
+    } else if (nHeight <= 4949782 && nHeight >= 4909463) {
+        nSubsidy = 65.25 * COIN;
+    } else if (nHeight <= 4990102 && nHeight >= 4949783) {
+        nSubsidy = 65.0 * COIN;
+    } else if (nHeight <= 4990103 && nHeight >= 4748184) {
+        nSubsidy = 64.75 * COIN;
+    } else if (nHeight <= 5232023 && nHeight >= 4990104) {
+        nSubsidy = 64.5 * COIN;
+    } else if (nHeight <= 5473943 && nHeight >= 5232024) {
+        nSubsidy = 64.25 * COIN;
+    } else if (nHeight <= 5715863 && nHeight >= 5473944) {
+        nSubsidy = 64.0 * COIN;
+    } else if (nHeight <= 5957783 && nHeight >= 5715864) {
+        nSubsidy = 63.75 * COIN;
+    } else if (nHeight <= 6199703 && nHeight >= 5957784) {
+        nSubsidy = 63.5 * COIN;
+    } else if (nHeight <= 6441623 && nHeight >= 6199704) {
+        nSubsidy = 63.25 * COIN;
+    } else if (nHeight <= 6683543 && nHeight >= 6441624) {
+        nSubsidy = 63.0 * COIN;
+    } else if (nHeight <= 6925463 && nHeight >= 6683544) {
+        nSubsidy = 62.75 * COIN;
+    } else if (nHeight <= 7167383 && nHeight >= 6925464) {
+        nSubsidy = 62.5 * COIN;
+    } else if (nHeight <= 7409303 && nHeight >= 7167384) {
+        nSubsidy = 62.25 * COIN;
+    } else if (nHeight <= 7651223 && nHeight >= 7409304) {
+        nSubsidy = 62.0 * COIN;
+    } else if (nHeight <= 7893143 && nHeight >= 7651224) {
+        nSubsidy = 61.75 * COIN;
+    } else if (nHeight <= 8135063 && nHeight >= 7893144) {
+        nSubsidy = 61.5 * COIN;
+    } else if (nHeight <= 8376983 && nHeight >= 8135064) {
+        nSubsidy = 61.25 * COIN;
+    } else if (nHeight <= 8618903 && nHeight >= 8376984) {
+        nSubsidy = 61.0 * COIN;
+    } else if (nHeight <= 8860823 && nHeight >= 8618904) {
+        nSubsidy = 60.75 * COIN;
+    } else if (nHeight <= 9102743 && nHeight >= 8860824) {
+        nSubsidy = 60.5 * COIN;
+    } else if (nHeight <= 9344663 && nHeight >= 9102744) {
+        nSubsidy = 60.25 * COIN;
+    } else if (nHeight <= 9586583 && nHeight >= 9344664) {
+        nSubsidy = 60.0 * COIN;
+    } else if (nHeight <= 9828503 && nHeight >= 9586584) {
+        nSubsidy = 59.75 * COIN;
+    } else if (nHeight <= 10070423 && nHeight >= 9828504) {
+        nSubsidy = 59.5 * COIN;
+    } else if (nHeight <= 10312343 && nHeight >= 10070424) {
+        nSubsidy = 59.25 * COIN;
+    } else if (nHeight <= 10554263 && nHeight >= 10312344) {
+        nSubsidy = 59.0 * COIN;
+    } else if (nHeight <= 10796183 && nHeight >= 10554264) {
+        nSubsidy = 58.75 * COIN;
+    } else if (nHeight <= 11038103 && nHeight >= 10796184) {
+        nSubsidy = 58.5 * COIN;
+    } else if (nHeight <= 11280023 && nHeight >= 11038104) {
+        nSubsidy = 58.25 * COIN;
+    } else if (nHeight <= 11521943 && nHeight >= 11280024) {
+        nSubsidy = 58.0 * COIN;
+    } else if (nHeight <= 11763863 && nHeight >= 11521944) {
+        nSubsidy = 57.75 * COIN;
+    } else if (nHeight <= 12005783 && nHeight >= 11763864) {
+        nSubsidy = 57.5 * COIN;
+    } else if (nHeight <= 12247703 && nHeight >= 12005784) {
+        nSubsidy = 57.25 * COIN;
+    } else if (nHeight <= 12489623 && nHeight >= 12247704) {
+        nSubsidy = 57.0 * COIN;
+    } else if (nHeight <= 12731543 && nHeight >= 12489624) {
+        nSubsidy = 56.75 * COIN;
+    } else if (nHeight <= 12973463 && nHeight >= 12731544) {
+        nSubsidy = 56.5 * COIN;
+    } else if (nHeight <= 13215383 && nHeight >= 12973464) {
+        nSubsidy = 56.25 * COIN;
+    } else if (nHeight <= 13457303 && nHeight >= 13215384) {
+        nSubsidy = 56.0 * COIN;
+    } else if (nHeight <= 13699223 && nHeight >= 13457304) {
+        nSubsidy = 55.75 * COIN;
+    } else if (nHeight <= 13941143 && nHeight >= 13699224) {
+        nSubsidy = 55.5 * COIN;
+    } else if (nHeight <= 14183063 && nHeight >= 13941144) {
+        nSubsidy = 55.25 * COIN;
+    } else if (nHeight <= 14424983 && nHeight >= 14183064) {
+        nSubsidy = 55.0 * COIN;
+    } else if (nHeight <= 14666903 && nHeight >= 14424984) {
+        nSubsidy = 54.75 * COIN;
+    } else if (nHeight <= 14908823 && nHeight >= 14666904) {
+        nSubsidy = 54.5 * COIN;
+    } else if (nHeight <= 15150743 && nHeight >= 14908824) {
+        nSubsidy = 54.25 * COIN;
+    } else if (nHeight <= 15392663 && nHeight >= 15150744) {
+        nSubsidy = 54.0 * COIN;
+    } else if (nHeight <= 15634583 && nHeight >= 15392664) {
+        nSubsidy = 53.75 * COIN;
+    } else if (nHeight <= 15876503 && nHeight >= 15634584) {
+        nSubsidy = 53.5 * COIN;
+    } else if (nHeight <= 16118423 && nHeight >= 15876504) {
+        nSubsidy = 53.25 * COIN;
+    } else if (nHeight <= 16360343 && nHeight >= 16118424) {
+        nSubsidy = 53.0 * COIN;
+    } else if (nHeight <= 16602263 && nHeight >= 16360344) {
+        nSubsidy = 52.75 * COIN;
+    } else if (nHeight <= 16844183 && nHeight >= 16602264) {
+        nSubsidy = 52.5 * COIN;
+    } else if (nHeight <= 17086103 && nHeight >= 16844184) {
+        nSubsidy = 52.25 * COIN;
+    } else if (nHeight <= 17328023 && nHeight >= 17086104) {
+        nSubsidy = 52.0 * COIN;
+    } else if (nHeight <= 17569943 && nHeight >= 17328024) {
+        nSubsidy = 51.75 * COIN;
+    } else if (nHeight <= 17811863 && nHeight >= 17569944) {
+        nSubsidy = 51.5 * COIN;
+    } else if (nHeight <= 18053783 && nHeight >= 17811864) {
+        nSubsidy = 51.25 * COIN;
+    } else if (nHeight <= 18295703 && nHeight >= 18053784) {
+        nSubsidy = 51.0 * COIN;
+    } else if (nHeight <= 18537623 && nHeight >= 18295704) {
+        nSubsidy = 50.75 * COIN;
+    } else if (nHeight <= 18779543 && nHeight >= 18537624) {
+        nSubsidy = 50.5 * COIN;
+    } else if (nHeight <= 19021463 && nHeight >= 18779544) {
+        nSubsidy = 50.25 * COIN;
+    } else if (nHeight <= 19263383 && nHeight >= 19021464) {
+        nSubsidy = 50.0 * COIN;
+    } else if (nHeight <= 19505303 && nHeight >= 19263384) {
+        nSubsidy = 49.75 * COIN;
+    } else if (nHeight <= 19747223 && nHeight >= 19505304) {
+        nSubsidy = 49.5 * COIN;
+    } else if (nHeight <= 19989143 && nHeight >= 19747224) {
+        nSubsidy = 49.25 * COIN;
+    } else if (nHeight <= 20231063 && nHeight >= 19989144) {
+        nSubsidy = 49.0 * COIN;
+    } else if (nHeight <= 20472983 && nHeight >= 20231064) {
+        nSubsidy = 48.75 * COIN;
+    } else if (nHeight <= 20714903 && nHeight >= 20472984) {
+        nSubsidy = 48.5 * COIN;
+    } else if (nHeight <= 20956823 && nHeight >= 20714904) {
+        nSubsidy = 48.25 * COIN;
+    } else if (nHeight <= 21198743 && nHeight >= 20956824) {
+        nSubsidy = 48.0 * COIN;
+    } else if (nHeight <= 21440663 && nHeight >= 21198744) {
+        nSubsidy = 47.75 * COIN;
+    } else if (nHeight <= 21682583 && nHeight >= 21440664) {
+        nSubsidy = 47.5 * COIN;
+    } else if (nHeight <= 21924503 && nHeight >= 21682584) {
+        nSubsidy = 47.25 * COIN;
+    } else if (nHeight <= 22166423 && nHeight >= 21924504) {
+        nSubsidy = 47.0 * COIN;
+    } else if (nHeight <= 22408343 && nHeight >= 22166424) {
+        nSubsidy = 46.75 * COIN;
+    } else if (nHeight <= 22650263 && nHeight >= 22408344) {
+        nSubsidy = 46.5 * COIN;
+    } else if (nHeight <= 22892183 && nHeight >= 22650264) {
+        nSubsidy = 46.25 * COIN;
+    } else if (nHeight <= 23134103 && nHeight >= 22892184) {
+        nSubsidy = 46.0 * COIN;
+    } else if (nHeight <= 23376023 && nHeight >= 23134104) {
+        nSubsidy = 45.75 * COIN;
+    } else if (nHeight <= 23617943 && nHeight >= 23376024) {
+        nSubsidy = 45.5 * COIN;
+    } else if (nHeight <= 23859863 && nHeight >= 23617944) {
+        nSubsidy = 45.25 * COIN;
+    } else if (nHeight <= 24101783 && nHeight >= 23859864) {
+        nSubsidy = 45.0 * COIN;
+    } else if (nHeight <= 24343703 && nHeight >= 24101784) {
+        nSubsidy = 44.75 * COIN;
+    } else if (nHeight <= 24585623 && nHeight >= 24343704) {
+        nSubsidy = 44.5 * COIN;
+    } else if (nHeight <= 24827543 && nHeight >= 24585624) {
+        nSubsidy = 44.25 * COIN;
+    } else if (nHeight <= 25069463 && nHeight >= 24827544) {
+        nSubsidy = 44.0 * COIN;
+    } else if (nHeight <= 25311383 && nHeight >= 25069464) {
+        nSubsidy = 43.75 * COIN;
+    } else if (nHeight <= 25553303 && nHeight >= 25311384) {
+        nSubsidy = 43.5 * COIN;
+    } else if (nHeight <= 25795223 && nHeight >= 25553304) {
+        nSubsidy = 43.25 * COIN;
+    } else if (nHeight <= 26037143 && nHeight >= 25795224) {
+        nSubsidy = 43.0 * COIN;
+    } else if (nHeight <= 26279063 && nHeight >= 26037144) {
+        nSubsidy = 42.75 * COIN;
+    } else if (nHeight <= 26520983 && nHeight >= 26279064) {
+        nSubsidy = 42.5 * COIN;
+    } else if (nHeight <= 26762903 && nHeight >= 26520984) {
+        nSubsidy = 42.25 * COIN;
+    } else if (nHeight <= 27004823 && nHeight >= 26762904) {
+        nSubsidy = 42.0 * COIN;
+    } else if (nHeight <= 27246743 && nHeight >= 27004824) {
+        nSubsidy = 41.75 * COIN;
+    } else if (nHeight <= 27488663 && nHeight >= 27246744) {
+        nSubsidy = 41.5 * COIN;
+    } else if (nHeight <= 27730583 && nHeight >= 27488664) {
+        nSubsidy = 41.25 * COIN;
+    } else if (nHeight <= 27972503 && nHeight >= 27730584) {
+        nSubsidy = 41.0 * COIN;
+    } else if (nHeight <= 28214423 && nHeight >= 27972504) {
+        nSubsidy = 40.75 * COIN;
+    } else if (nHeight <= 28456343 && nHeight >= 28214424) {
+        nSubsidy = 40.5 * COIN;
+    } else if (nHeight <= 28698263 && nHeight >= 28456344) {
+        nSubsidy = 40.25 * COIN;
+    } else if (nHeight <= 28940183 && nHeight >= 28698264) {
+        nSubsidy = 40.0 * COIN;
+    } else if (nHeight <= 28940183 && nHeight >= 1) {
+        nSubsidy = 39.75 * COIN;
+    } else if (nHeight <= 57880366 && nHeight >= 28940184) {
+        nSubsidy = 39.5 * COIN;
+    } else if (nHeight <= 86820549 && nHeight >= 57880367) {
+        nSubsidy = 39.25 * COIN;
+    } else if (nHeight <= 115760732 && nHeight >= 86820550) {
+        nSubsidy = 39.0 * COIN;
+    } else if (nHeight <= 144700915 && nHeight >= 115760733) {
+        nSubsidy = 38.75 * COIN;
+    } else if (nHeight <= 173641098 && nHeight >= 144700916) {
+        nSubsidy = 38.5 * COIN;
+    } else if (nHeight <= 202581281 && nHeight >= 173641099) {
+        nSubsidy = 38.25 * COIN;
+    } else if (nHeight <= 231521464 && nHeight >= 202581282) {
+        nSubsidy = 38.0 * COIN;
+    } else if (nHeight <= 260461647 && nHeight >= 231521465) {
+        nSubsidy = 37.75 * COIN;
+    } else if (nHeight <= 289401830 && nHeight >= 260461648) {
+        nSubsidy = 37.5 * COIN;
+    } else if (nHeight <= 318342013 && nHeight >= 289401831) {
+        nSubsidy = 37.25 * COIN;
+    } else if (nHeight <= 347282196 && nHeight >= 318342014) {
+        nSubsidy = 37.0 * COIN;
+    } else if (nHeight <= 376222379 && nHeight >= 347282197) {
+        nSubsidy = 36.75 * COIN;
+    } else if (nHeight <= 405162562 && nHeight >= 376222380) {
+        nSubsidy = 36.5 * COIN;
+    } else if (nHeight <= 434102745 && nHeight >= 405162563) {
+        nSubsidy = 36.25 * COIN;
+    } else if (nHeight <= 463042928 && nHeight >= 434102746) {
+        nSubsidy = 36.0 * COIN;
+    } else if (nHeight <= 491983111 && nHeight >= 463042929) {
+        nSubsidy = 35.75 * COIN;
+    } else if (nHeight <= 520923294 && nHeight >= 491983112) {
+        nSubsidy = 35.5 * COIN;
+    } else if (nHeight <= 549863477 && nHeight >= 520923295) {
+        nSubsidy = 35.25 * COIN;
+    } else if (nHeight <= 578803660 && nHeight >= 549863478) {
+        nSubsidy = 35.0 * COIN;
+    } else if (nHeight <= 607743843 && nHeight >= 578803661) {
+        nSubsidy = 34.75 * COIN;
+    } else if (nHeight <= 636684026 && nHeight >= 607743844) {
+        nSubsidy = 34.5 * COIN;
+    } else if (nHeight <= 665624209 && nHeight >= 636684027) {
+        nSubsidy = 34.25 * COIN;
+    } else if (nHeight <= 694564392 && nHeight >= 665624210) {
+        nSubsidy = 34.0 * COIN;
+    } else if (nHeight <= 723504575 && nHeight >= 694564393) {
+        nSubsidy = 33.75 * COIN;
+    } else if (nHeight <= 752444758 && nHeight >= 723504576) {
+        nSubsidy = 33.5 * COIN;
+    } else if (nHeight <= 781384941 && nHeight >= 752444759) {
+        nSubsidy = 33.25 * COIN;
+    } else if (nHeight <= 810325124 && nHeight >= 781384942) {
+        nSubsidy = 33.0 * COIN;
+    } else if (nHeight <= 839265307 && nHeight >= 810325125) {
+        nSubsidy = 32.75 * COIN;
+    } else if (nHeight <= 868205490 && nHeight >= 839265308) {
+        nSubsidy = 32.5 * COIN;
+    } else if (nHeight <= 897145673 && nHeight >= 868205491) {
+        nSubsidy = 32.25 * COIN;
+    } else if (nHeight <= 926085856 && nHeight >= 897145674) {
+        nSubsidy = 32.0 * COIN;
+    } else if (nHeight <= 955026039 && nHeight >= 926085857) {
+        nSubsidy = 31.75 * COIN;
+    } else if (nHeight <= 983966222 && nHeight >= 955026040) {
+        nSubsidy = 31.5 * COIN;
+    } else if (nHeight <= 1012906405 && nHeight >= 983966223) {
+        nSubsidy = 31.25 * COIN;
+    } else if (nHeight <= 1041846588 && nHeight >= 1012906406) {
+        nSubsidy = 31.0 * COIN;
+    } else if (nHeight <= 1070786771 && nHeight >= 1041846589) {
+        nSubsidy = 30.75 * COIN;
+    } else if (nHeight <= 1099726954 && nHeight >= 1070786772) {
+        nSubsidy = 30.5 * COIN;
+    } else if (nHeight <= 1128667137 && nHeight >= 1099726955) {
+        nSubsidy = 30.25 * COIN;
+    } else if (nHeight <= 1157607320 && nHeight >= 1128667138) {
+        nSubsidy = 30.0 * COIN;
+    } else if (nHeight <= 1186547503 && nHeight >= 1157607321) {
+        nSubsidy = 29.75 * COIN;
+    } else if (nHeight <= 1215487686 && nHeight >= 1186547504) {
+        nSubsidy = 29.5 * COIN;
+    } else if (nHeight <= 1244427869 && nHeight >= 1215487687) {
+        nSubsidy = 29.25 * COIN;
+    } else if (nHeight <= 1273368052 && nHeight >= 1244427870) {
+        nSubsidy = 29.0 * COIN;
+    } else if (nHeight <= 1302308235 && nHeight >= 1273368053) {
+        nSubsidy = 28.75 * COIN;
+    } else if (nHeight <= 1331248418 && nHeight >= 1302308236) {
+        nSubsidy = 28.5 * COIN;
+    } else if (nHeight <= 1360188601 && nHeight >= 1331248419) {
+        nSubsidy = 28.25 * COIN;
+    } else if (nHeight <= 1389128784 && nHeight >= 1360188602) {
+        nSubsidy = 28.0 * COIN;
+    } else if (nHeight <= 1418068967 && nHeight >= 1389128785) {
+        nSubsidy = 27.75 * COIN;
+    } else if (nHeight <= 1447009150 && nHeight >= 1418068968) {
+        nSubsidy = 27.5 * COIN;
+    } else if (nHeight <= 1475949333 && nHeight >= 1447009151) {
+        nSubsidy = 27.25 * COIN;
+    } else if (nHeight <= 1504889516 && nHeight >= 1475949334) {
+        nSubsidy = 27.0 * COIN;
+    } else if (nHeight <= 1533829699 && nHeight >= 1504889517) {
+        nSubsidy = 26.75 * COIN;
+    } else if (nHeight <= 1562769882 && nHeight >= 1533829700) {
+        nSubsidy = 26.5 * COIN;
+    } else if (nHeight <= 1591710065 && nHeight >= 1562769883) {
+        nSubsidy = 26.25 * COIN;
+    } else if (nHeight <= 1620650248 && nHeight >= 1591710066) {
+        nSubsidy = 26.0 * COIN;
+    } else if (nHeight <= 1649590431 && nHeight >= 1620650249) {
+        nSubsidy = 25.75 * COIN;
+    } else if (nHeight <= 1678530614 && nHeight >= 1649590432) {
+        nSubsidy = 25.5 * COIN;
+    } else if (nHeight <= 1707470797 && nHeight >= 1678530615) {
+        nSubsidy = 25.25 * COIN;
+    } else if (nHeight <= 1736410980 && nHeight >= 1707470798) {
+        nSubsidy = 25.0 * COIN;
+    } else if (nHeight <= 1765351163 && nHeight >= 1736410981) {
+        nSubsidy = 24.75 * COIN;
+    } else if (nHeight <= 1794291346 && nHeight >= 1765351164) {
+        nSubsidy = 24.5 * COIN;
+    } else if (nHeight <= 1823231529 && nHeight >= 1794291347) {
+        nSubsidy = 24.25 * COIN;
+    } else if (nHeight <= 1852171712 && nHeight >= 1823231530) {
+        nSubsidy = 24.0 * COIN;
+    } else if (nHeight <= 1881111895 && nHeight >= 1852171713) {
+        nSubsidy = 23.75 * COIN;
+    } else if (nHeight <= 1910052078 && nHeight >= 1881111896) {
+        nSubsidy = 23.5 * COIN;
+    } else if (nHeight <= 1938992261 && nHeight >= 1910052079) {
+        nSubsidy = 23.25 * COIN;
+    } else if (nHeight <= 1967932444 && nHeight >= 1938992262) {
+        nSubsidy = 23.0 * COIN;
+    } else if (nHeight <= 1996872627 && nHeight >= 1967932445) {
+        nSubsidy = 22.75 * COIN;
+    } else if (nHeight <= 2025812810 && nHeight >= 1996872628) {
+        nSubsidy = 22.5 * COIN;
+    } else if (nHeight <= 2054752993 && nHeight >= 2025812811) {
+        nSubsidy = 22.25 * COIN;
+    } else if (nHeight <= 2083693176 && nHeight >= 2054752994) {
+        nSubsidy = 22.0 * COIN;
+    } else if (nHeight <= 2112633359 && nHeight >= 2083693177) {
+        nSubsidy = 21.75 * COIN;
+    } else if (nHeight <= 2141573542 && nHeight >= 2112633360) {
+        nSubsidy = 21.5 * COIN;
+    } else if (nHeight <= 2170513725 && nHeight >= 2141573543) {
+        nSubsidy = 21.25 * COIN;
+    } else if (nHeight <= 2199453908 && nHeight >= 2170513726) {
+        nSubsidy = 21.0 * COIN;
+    } else if (nHeight <= 2228394091 && nHeight >= 2199453909) {
+        nSubsidy = 20.75 * COIN;
+    } else if (nHeight <= 2257334274 && nHeight >= 2228394092) {
+        nSubsidy = 20.5 * COIN;
+    } else if (nHeight <= 2286274457 && nHeight >= 2257334275) {
+        nSubsidy = 20.25 * COIN;
+    } else if (nHeight <= 2315214640 && nHeight >= 2286274458) {
+        nSubsidy = 20.0 * COIN;
+    } else if (nHeight <= 2344154823 && nHeight >= 2315214641) {
+        nSubsidy = 19.75 * COIN;
+    } else if (nHeight <= 2373095006 && nHeight >= 2344154824) {
+        nSubsidy = 19.5 * COIN;
+    } else if (nHeight <= 2402035189 && nHeight >= 2373095007) {
+        nSubsidy = 19.25 * COIN;
+    } else if (nHeight <= 2430975372 && nHeight >= 2402035190) {
+        nSubsidy = 19.0 * COIN;
+    } else if (nHeight <= 2459915555 && nHeight >= 2430975373) {
+        nSubsidy = 18.75 * COIN;
+    } else if (nHeight <= 2488855738 && nHeight >= 2459915556) {
+        nSubsidy = 18.5 * COIN;
+    } else if (nHeight <= 2517795921 && nHeight >= 2488855739) {
+        nSubsidy = 18.25 * COIN;
+    } else if (nHeight <= 2546736104 && nHeight >= 2517795922) {
+        nSubsidy = 18.0 * COIN;
+    } else if (nHeight <= 2575676287 && nHeight >= 2546736105) {
+        nSubsidy = 17.75 * COIN;
+    } else if (nHeight <= 2604616470 && nHeight >= 2575676288) {
+        nSubsidy = 17.5 * COIN;
+    } else if (nHeight <= 2633556653 && nHeight >= 2604616471) {
+        nSubsidy = 17.25 * COIN;
+    } else if (nHeight <= 2662496836 && nHeight >= 2633556654) {
+        nSubsidy = 17.0 * COIN;
+    } else if (nHeight <= 2691437019 && nHeight >= 2662496837) {
+        nSubsidy = 16.75 * COIN;
+    } else if (nHeight <= 2720377202 && nHeight >= 2691437020) {
+        nSubsidy = 16.5 * COIN;
+    } else if (nHeight <= 2749317385 && nHeight >= 2720377203) {
+        nSubsidy = 16.25 * COIN;
+    } else if (nHeight <= 2778257568 && nHeight >= 2749317386) {
+        nSubsidy = 16.0 * COIN;
+    } else if (nHeight <= 2807197751 && nHeight >= 2778257569) {
+        nSubsidy = 15.75 * COIN;
+    } else if (nHeight <= 2836137934 && nHeight >= 2807197752) {
+        nSubsidy = 15.5 * COIN;
+    } else if (nHeight <= 2865078117 && nHeight >= 2836137935) {
+        nSubsidy = 15.25 * COIN;
+    } else if (nHeight <= 4000000000 && nHeight >= 2865078118 {
+        nSubsidy = 15
+    } else if (nHeight <= 8000000000 && nHeight >= 4000000001 {
+        nSubsidy = 14
+    } else if (nHeight <= 16000000000 && nHeight >= 8000000001 {
+        nSubsidy = 13
+    } else if (nHeight <= 30000000000 && nHeight >= 16000000001 {
+        nSubsidy = 12
+    } else if (nHeight <= 50000000000 && nHeight >= 30000000001 {
+        nSubsidy = 11
+    else {
+        nSubsidy = 10;
     }
     return nSubsidy + nFees;
 }
