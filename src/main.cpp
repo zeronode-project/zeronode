@@ -1620,11 +1620,11 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
     }
 
     int64_t nBudgetMultiplier = COIN;
-    
+
     if (!fBudgetBlock)
         nBudgetMultiplier = COIN - (Params().GetBudgetPercent() * CENT);
-    
-    //Be sure to re-add budget multiplier 
+
+    //Be sure to re-add budget multiplier
     if (nHeight == 0) {
         nSubsidy = 250000 * COIN;
     } else if (nHeight <= 5 && nHeight >= 1) {
@@ -2245,8 +2245,6 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
         nSubsidy = 40.25 * COIN;
     } else if (nHeight <= 28940183 && nHeight >= 28698264) {
         nSubsidy = 40.0 * COIN;
-    } else if (nHeight <= 28940183 && nHeight >= 1) {
-        nSubsidy = 39.75 * COIN;
     } else if (nHeight <= 57880366 && nHeight >= 28940184) {
         nSubsidy = 39.5 * COIN;
     } else if (nHeight <= 86820549 && nHeight >= 57880367) {
