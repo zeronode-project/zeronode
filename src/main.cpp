@@ -1639,7 +1639,7 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
         nSubsidy = 200 * COIN;
     } else if (nHeight <= 99 && nHeight >= 80) {
         nSubsidy = 175 * COIN;
-    } else if (nHeight <= 199 && nHeight >= 150) {
+    } else if (nHeight <= 199 && nHeight >= 100) {
         nSubsidy = 150 * COIN;
     } else if (nHeight <= 499 && nHeight >= 200) {
         nSubsidy = 125 * COIN;
