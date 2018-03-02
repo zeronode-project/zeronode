@@ -1612,6 +1612,9 @@ double ConvertBitsToDouble(unsigned int nBits)
 
 int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
 {
+    
+    LogPrintf("&&&& Reward Requested: Block Height received were: %s, fees were %s\n", nHeight, nFees);
+
     int64_t nSubsidy = 0;
 
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
@@ -2396,11 +2399,15 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
     } else {
         nSubsidy = 21.0 * COIN;
     }
+    
+    LogPrintf("&&&& Reward Requested: nSubsidy determined was %s and fees were %s, total is %s", nSubsidy, nFees, nSubsidy + nFees);
     return nSubsidy + nFees;
 }
 
 int64_t GetMasternodePayment(CAmount nTotalBlockReward)
 {
+    LogPrintf("&&&& Masternode Reward Requested: nTotalBlockReward received was: %s\n", nTotalBlockReward);
+    LogPrintf("&&&& Masternode Reward Requested: Returning: %s\n", nTotalBlockReward / COIN * (Params().GetMasternodeRewardPercent() * CENT));
     return nTotalBlockReward / COIN * (Params().GetMasternodeRewardPercent() * CENT);
 }
 
