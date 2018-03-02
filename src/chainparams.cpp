@@ -112,7 +112,7 @@ public:
         nMaxMoneyOut = int64_t(20000000000) * COIN;
         nModifierInterval = 60;
         nModifierIntervalRatio = 3;
-        nBudgetPercent = 1;
+        nBudgetPercent = 0;
         nMinStakeAge = 60*60*12; // ZeroNode: 12 hours
         nMasternodeRewardPercent = 85; // % of block reward that goes to masternodes
         nRequiredMasternodeCollateral = 25000 * COIN; // 25,000 ZNODE
