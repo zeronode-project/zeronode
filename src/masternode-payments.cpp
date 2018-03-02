@@ -301,7 +301,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
     CAmount blockValue = GetBlockValue(pindexPrev->nHeight, nFees, false);
     CAmount masternodePayment = GetMasternodePayment(blockValue);
 
-
+    LogPrintf("&&&& BlockValue is %s - formatMoneyBlockValue is %s -- Masternode value out is %s - masternode value out after formatMoney is %s", blockValue, FormatMoney(blockValue), masternodePayment, FormatMoney(masternodePayment));
 
     if (hasPayment) {
         if (fProofOfStake) {
@@ -312,13 +312,18 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
              */
             unsigned int i = txNew.vout.size();
             txNew.vout.resize(i + 1);
+
+            LogPrintf("txNew.vout.size was %s, now is %s", i, (i+1);
+
             txNew.vout[i].scriptPubKey = payee;
             txNew.vout[i].nValue = masternodePayment;
 
             //subtract mn payment from the stake reward
             txNew.vout[i - 1].nValue -= masternodePayment;
+            LogPrintf("---STAKE - EARNED--- BlockValue is %s -- Masternode value out is %s - stake value out is %s\n", blockValue, masternodePayment, txNew.vout[i - 1].nValue);
 
-            LogPrintf("*** total reward %s masternode %s stake %s\n", FormatMoney(blockValue), FormatMoney(masternodePayment), FormatMoney(txNew.vout[i - 1].nValue));
+            LogPrintf("*** (default: formatted) total reward %s masternode %s stake %s\n", FormatMoney(blockValue), FormatMoney(masternodePayment), FormatMoney(txNew.vout[i - 1].nValue));
+            LogPrintf("*** (default: formatted) total reward %s masternode %s stake %s\n", FormatMoney(blockValue).c_str(), FormatMoney(masternodePayment).c_str(), FormatMoney(txNew.vout[i - 1].nValue));
         } else {
             txNew.vout.resize(2);
             txNew.vout[1].scriptPubKey = payee;
