@@ -105,7 +105,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // ZeroNode: 1 minute
         nTargetSpacing = 1 * 60;  // ZeroNode: 1 minute
-        nLastPOWBlock = 10080;
+        nLastPOWBlock = 1080;
         nMaturity = 10;
         nMasternodeCountDrift = 20;
         nModifierUpdateBlock = 0;
@@ -113,7 +113,7 @@ public:
         nModifierInterval = 60;
         nModifierIntervalRatio = 3;
         nBudgetPercent = 0;
-        nMinStakeAge = 60*60*12; // ZeroNode: 12 hours
+        nMinStakeAge = 60*60*2; // ZeroNode: 12 hours
         nMasternodeRewardPercent = 85; // % of block reward that goes to masternodes
         nRequiredMasternodeCollateral = 25000 * COIN; // 25,000 ZNODE
 
