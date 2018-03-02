@@ -313,8 +313,6 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
             unsigned int i = txNew.vout.size();
             txNew.vout.resize(i + 1);
 
-            LogPrintf("txNew.vout.size was %s, now is %s", i, (i+1);
-
             txNew.vout[i].scriptPubKey = payee;
             txNew.vout[i].nValue = masternodePayment;
 
