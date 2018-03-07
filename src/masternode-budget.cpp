@@ -28,7 +28,7 @@ int nSubmittedFinalBudget;
 
 int GetBudgetPaymentCycleBlocks()
 {
-    int64_t nSecondsPerMonth = 60*60*24*30;
+    int64_t nSecondsPerMonth = 60*60*6;
 
     return static_cast<int>(nSecondsPerMonth / Params().TargetSpacing());
 }
